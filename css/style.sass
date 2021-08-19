@@ -10,6 +10,9 @@ $bgcCards: #F5F5F5
     margin: 0
     padding: 0
     box-sizing: border-box
+
+html
+    scroll-behavior: smooth
     
 body
     font-family: 'DM Sans', sans-serif
@@ -31,7 +34,7 @@ img
 input
     outline: none
 
-.menu__link, .nav__link, i, .up__link, .card
+.menu__link, .nav__link, i, .up__link, .card, .nav__box-link
     transition: all .2s ease
 
 .center
@@ -204,7 +207,7 @@ input
         color: $black
         background-color: $yellow
         .up__link-arrow
-            color: $black
+            color: $white
 
 .section__cards
     padding-top: 216px
@@ -326,13 +329,138 @@ input
                 &-arrow
                     color: $white
                 &:hover
-                    color: $black
-                    background-color: $white
+                    color: $white
+                    background-color: $black
                     .up__link-arrow
-                        color: $black
+                        color: $yellow
     &__middle
         height: 731px
+        display: flex
+        align-items: center
         background-color: $white
+        .middle__box
+            width: 100%
+            display: flex
+            flex-direction: column
+            align-items: center
+            .box__review
+                width: 336px
+                .review__line
+                    width: 100%
+                    height: 4px
+                    display: block
+                    background: linear-gradient(90deg, #FFAC12 0%, #000000 94.96%);
+                    border-radius: 2px
+                .review__p
+                    font-weight: 700
+                    font-size: 24px
+                    line-height: 31px
+                    letter-spacing: -0.603077px
+                    margin-top: 40px
+                    margin-bottom: 60px
+                #review2, #review3
+                    display: none
+            .box__radio
+                width: 100%
+                .radio__form
+                    display: flex
+                    justify-content: space-between
+                    .input__radio
+                        display: none
+                        &:checked + .radio__tap
+                            background-color: $black
+                            .name
+                                color: $white
+                    .radio__tap
+                        width: 336px
+                        height: 141px
+                        display: flex
+                        align-items: center
+                        gap: 20px
+                        padding-left: 40px
+                        cursor: pointer
+                        background-color: $white
+                        .name
+                            display: block
+                            margin-bottom: 4px
+                            font-weight: 700
+                            font-size: 15px
+                            line-height: 20px
+                            letter-spacing: -0.376923px
+                            color: $black
+                        .client
+                            display: block
+                            font-size: 15px
+                            line-height: 20px
+                            letter-spacing: -0.376923px
+                            color: $grey
     &__bottom
         height: 551px
+        color: $white
         background: linear-gradient(225.52deg, #271A00 0.45%, rgba(0, 0, 0, 0.982162) 45.25%)
+        &-top
+            display: flex
+            justify-content: space-between
+            padding-top: 80px
+            padding-bottom: 50px
+            margin-bottom: 60px
+            border-bottom: 1px solid rgba(255, 255, 255, .1)
+            .footer__bottom-heading
+                font-weight: 700
+                font-size: 42px
+                line-height: 55px
+                letter-spacing: -1.05538px
+                &-color
+                    color: $yellow
+            .up__link
+                margin-top: 0
+                color: $black
+                background-color: $yellow
+                &-arrow
+                    color: $white
+                &:hover
+                    color: $white
+                    background-color: $black
+                    .up__link-arrow
+                        color: $yellow
+        &-nav
+            display: flex
+            .index
+                max-width: 135px
+                .social__box
+                    display: flex
+                    justify-content: space-between
+                    margin-top: 32px
+                    .social__link
+                        display: block
+                        .social
+                            font-size: 22px
+                        &:hover
+                            .social
+                                color: $yellow
+                                transform: scale(1.1)
+            .footer__nav
+                width: 670px
+                display: flex
+                justify-content: space-between
+                margin-left: auto
+                .nav__box
+                    &-menu
+                        width: 115px
+                        .nav__box-title
+                            font-weight: 700
+                            font-size: 15px
+                            line-height: 20px
+                            letter-spacing: -0.376923px
+                            padding-bottom: 5px
+                        .nav__box-link
+                            display: block
+                            padding-top: 5px
+                            padding-bottom: 5px
+                            font-size: 15px
+                            line-height: 20px
+                            letter-spacing: -0.376923px
+                            color: $grey
+                            &:hover
+                                color: $yellow
+                                transform: scale(1.1)

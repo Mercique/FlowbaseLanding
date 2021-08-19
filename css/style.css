@@ -7,6 +7,10 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'DM Sans', sans-serif;
   font-weight: 400;
@@ -32,7 +36,7 @@ input {
   outline: none;
 }
 
-.menu__link, .nav__link, i, .up__link, .card {
+.menu__link, .nav__link, i, .up__link, .card, .nav__box-link {
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
 }
@@ -304,7 +308,7 @@ input {
 }
 
 .up__link:hover .up__link-arrow {
-  color: #000000;
+  color: #FFFFFF;
 }
 
 .section__cards {
@@ -527,21 +531,242 @@ input {
 }
 
 .footer__up .up__box .up__link:hover {
-  color: #000000;
-  background-color: #FFFFFF;
+  color: #FFFFFF;
+  background-color: #000000;
 }
 
 .footer__up .up__box .up__link:hover .up__link-arrow {
-  color: #000000;
+  color: #FFAC12;
 }
 
 .footer__middle {
   height: 731px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #FFFFFF;
+}
+
+.footer__middle .middle__box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__middle .middle__box .box__review {
+  width: 336px;
+}
+
+.footer__middle .middle__box .box__review .review__line {
+  width: 100%;
+  height: 4px;
+  display: block;
+  background: -webkit-gradient(linear, left top, right top, from(#FFAC12), color-stop(94.96%, #000000));
+  background: linear-gradient(90deg, #FFAC12 0%, #000000 94.96%);
+  border-radius: 2px;
+}
+
+.footer__middle .middle__box .box__review .review__p {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  letter-spacing: -0.603077px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.footer__middle .middle__box .box__review #review2, .footer__middle .middle__box .box__review #review3 {
+  display: none;
+}
+
+.footer__middle .middle__box .box__radio {
+  width: 100%;
+}
+
+.footer__middle .middle__box .box__radio .radio__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__middle .middle__box .box__radio .radio__form .input__radio {
+  display: none;
+}
+
+.footer__middle .middle__box .box__radio .radio__form .input__radio:checked + .radio__tap {
+  background-color: #000000;
+}
+
+.footer__middle .middle__box .box__radio .radio__form .input__radio:checked + .radio__tap .name {
+  color: #FFFFFF;
+}
+
+.footer__middle .middle__box .box__radio .radio__form .radio__tap {
+  width: 336px;
+  height: 141px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  padding-left: 40px;
+  cursor: pointer;
+  background-color: #FFFFFF;
+}
+
+.footer__middle .middle__box .box__radio .radio__form .radio__tap .name {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -0.376923px;
+  color: #000000;
+}
+
+.footer__middle .middle__box .box__radio .radio__form .radio__tap .client {
+  display: block;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -0.376923px;
+  color: #979797;
 }
 
 .footer__bottom {
   height: 551px;
+  color: #FFFFFF;
   background: linear-gradient(225.52deg, #271A00 0.45%, rgba(0, 0, 0, 0.982162) 45.25%);
+}
+
+.footer__bottom-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  margin-bottom: 60px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer__bottom-top .footer__bottom-heading {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 55px;
+  letter-spacing: -1.05538px;
+}
+
+.footer__bottom-top .footer__bottom-heading-color {
+  color: #FFAC12;
+}
+
+.footer__bottom-top .up__link {
+  margin-top: 0;
+  color: #000000;
+  background-color: #FFAC12;
+}
+
+.footer__bottom-top .up__link-arrow {
+  color: #FFFFFF;
+}
+
+.footer__bottom-top .up__link:hover {
+  color: #FFFFFF;
+  background-color: #000000;
+}
+
+.footer__bottom-top .up__link:hover .up__link-arrow {
+  color: #FFAC12;
+}
+
+.footer__bottom-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__bottom-nav .index {
+  max-width: 135px;
+}
+
+.footer__bottom-nav .index .social__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 32px;
+}
+
+.footer__bottom-nav .index .social__box .social__link {
+  display: block;
+}
+
+.footer__bottom-nav .index .social__box .social__link .social {
+  font-size: 22px;
+}
+
+.footer__bottom-nav .index .social__box .social__link:hover .social {
+  color: #FFAC12;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.footer__bottom-nav .footer__nav {
+  width: 670px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: auto;
+}
+
+.footer__bottom-nav .footer__nav .nav__box-menu {
+  width: 115px;
+}
+
+.footer__bottom-nav .footer__nav .nav__box-menu .nav__box-title {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -0.376923px;
+  padding-bottom: 5px;
+}
+
+.footer__bottom-nav .footer__nav .nav__box-menu .nav__box-link {
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -0.376923px;
+  color: #979797;
+}
+
+.footer__bottom-nav .footer__nav .nav__box-menu .nav__box-link:hover {
+  color: #FFAC12;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 /*# sourceMappingURL=style.css.map */
