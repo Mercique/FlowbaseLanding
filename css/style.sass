@@ -349,6 +349,19 @@ button
         display: flex
         justify-content: space-between
         &-left
+            display: flex
+            flex-direction: column
+            .product__img
+                margin-bottom: 20px
+            form
+                display: flex
+                justify-content: space-between
+                .product__label
+                    cursor: pointer
+                .product__input
+                    display: none
+                .product__input:checked + .img__radio
+                    opacity: .5
         &-right
             .product__form
                 width: 336px

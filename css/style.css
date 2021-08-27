@@ -552,6 +552,41 @@ button {
           justify-content: space-between;
 }
 
+.main .section__product-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main .section__product-left .product__img {
+  margin-bottom: 20px;
+}
+
+.main .section__product-left form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .section__product-left form .product__label {
+  cursor: pointer;
+}
+
+.main .section__product-left form .product__input {
+  display: none;
+}
+
+.main .section__product-left form .product__input:checked + .img__radio {
+  opacity: .5;
+}
+
 .main .section__product-right .product__form {
   width: 336px;
   display: -webkit-box;
