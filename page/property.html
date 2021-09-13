@@ -23,9 +23,9 @@
             </a>
             <ul class="nav__menu">
                 <li class="menu__list"><a href="../index.html" class="menu__link">Home</a></li>
-                <li class="menu__list"><a href="#about" class="menu__link">About</a></li>
-                <li class="menu__list"><a href="#places" class="menu__link">Places</a></li>
-                <li class="menu__list"><a href="#services" class="menu__link">Services</a></li>
+                <li class="menu__list"><a href="../index.html" class="menu__link">About</a></li>
+                <li class="menu__list"><a href="../index.html" class="menu__link">Places</a></li>
+                <li class="menu__list"><a href="../index.html" class="menu__link">Services</a></li>
             </ul>
             <a href="#" class="nav__link">Contacts<i class="fas fa-long-arrow-alt-right nav__link-arrow"></i></a>
         </nav>
@@ -38,54 +38,215 @@
     <main class="main">
         <section class="section__product center">
             <div class="section__product-left">
-                <div class="product__img">
-                    <img src="../img/product1.png" alt="pr1" id="img">
+                <div class="product__up">
+                    <div class="product__img">
+                        <img src="../img/product1.png" alt="pr1" id="img">
+                    </div>
+                    <div class="product__radio-box">
+                        <form action="#">
+                            <label class="product__label">
+                                <input type="radio" name="radioPicture" value="1" class="product__input" onclick="swapPicture(value)" checked>
+                                <div class="img__radio">
+                                    <img src="../img/radio1.png" alt="pic-radio">
+                                </div>
+                            </label>
+                            <label class="product__label">
+                                <input type="radio" name="radioPicture" value="2" class="product__input" onclick="swapPicture(value)">
+                                <div class="img__radio">
+                                    <img src="../img/radio2.png" alt="pic-radio">
+                                </div>
+                            </label>
+                            <label class="product__label">
+                                <input type="radio" name="radioPicture" value="3" class="product__input" onclick="swapPicture(value)">
+                                <div class="img__radio">
+                                    <img src="../img/radio3.png" alt="pic-radio">
+                                </div>
+                            </label>
+                            <label class="product__label">
+                                <input type="radio" name="radioPicture" value="4" class="product__input" onclick="swapPicture(value)">
+                                <div class="img__radio">
+                                    <img src="../img/radio4.png" alt="pic-radio">
+                                </div>
+                            </label>
+                            <label class="product__label">
+                                <input type="radio" name="radioPicture" value="5" class="product__input" onclick="swapPicture(value)">
+                                <div class="img__radio">
+                                    <img src="../img/radio5.png" alt="pic-radio">
+                                </div>
+                            </label>
+                            <label class="product__label">
+                                <input type="radio" name="radioPicture" value="6" class="product__input" onclick="swapPicture(value)">
+                                <div class="img__radio">
+                                    <img src="../img/radio6.png" alt="pic-radio">
+                                </div>
+                            </label>
+                            <label class="product__label">
+                                <input type="radio" name="radioPicture" value="7" class="product__input" onclick="swapPicture(value)">
+                                <div class="img__radio">
+                                    <img src="../img/radio7.png" alt="pic-radio">
+                                </div>
+                            </label>
+                        </form>
+                    </div>
                 </div>
-                <div class="product__radio-box">
-                    <form action="#">
-                        <label class="product__label">
-                            <input type="radio" name="radioPicture" value="1" class="product__input" onclick="swapPicture(value)" checked>
-                            <div class="img__radio">
-                                <img src="../img/radio1.png" alt="pic-radio">
-                            </div>
-                        </label>
-                        <label class="product__label">
-                            <input type="radio" name="radioPicture" value="2" class="product__input" onclick="swapPicture(value)">
-                            <div class="img__radio">
-                                <img src="../img/radio2.png" alt="pic-radio">
-                            </div>
-                        </label>
-                        <label class="product__label">
-                            <input type="radio" name="radioPicture" value="3" class="product__input" onclick="swapPicture(value)">
-                            <div class="img__radio">
-                                <img src="../img/radio3.png" alt="pic-radio">
-                            </div>
-                        </label>
-                        <label class="product__label">
-                            <input type="radio" name="radioPicture" value="4" class="product__input" onclick="swapPicture(value)">
-                            <div class="img__radio">
-                                <img src="../img/radio4.png" alt="pic-radio">
-                            </div>
-                        </label>
-                        <label class="product__label">
-                            <input type="radio" name="radioPicture" value="5" class="product__input" onclick="swapPicture(value)">
-                            <div class="img__radio">
-                                <img src="../img/radio5.png" alt="pic-radio">
-                            </div>
-                        </label>
-                        <label class="product__label">
-                            <input type="radio" name="radioPicture" value="6" class="product__input" onclick="swapPicture(value)">
-                            <div class="img__radio">
-                                <img src="../img/radio6.png" alt="pic-radio">
-                            </div>
-                        </label>
-                        <label class="product__label">
-                            <input type="radio" name="radioPicture" value="7" class="product__input" onclick="swapPicture(value)">
-                            <div class="img__radio">
-                                <img src="../img/radio7.png" alt="pic-radio">
-                            </div>
-                        </label>
-                    </form>
+                <div class="product__details">
+                    <h3 class="product__details-title">Details</h3>
+                    <div class="product__details-box">
+                        <div class="product__details-item">
+                            <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.04568 1.93553H7.95435C8.83758 1.93633 9.60446 2.54408 9.80701 3.40378C9.82401 3.47545 9.88794 3.52611 9.9616 3.52628H12.8864C12.9286 3.52643 12.9691 3.50979 12.999 3.48001C13.0289 3.45024 13.0457 3.40979 13.0457 3.36761V1.77628C13.0457 1.43876 12.9116 1.11507 12.6728 0.876456C12.4341 0.637846 12.1104 0.503874 11.7728 0.504028H2.22718C1.88966 0.503874 1.5659 0.637846 1.32719 0.876456C1.08847 1.11507 0.954346 1.43876 0.954346 1.77628V3.36761C0.954345 3.40979 0.971142 3.45024 1.00102 3.48001C1.03091 3.50979 1.07141 3.52643 1.1136 3.52628H4.03843C4.11224 3.52654 4.1764 3.47569 4.19301 3.40378C4.39557 2.54408 5.16244 1.93633 6.04568 1.93553Z" fill="black"/>
+                                <path d="M0.636417 4.4812C0.467581 4.48105 0.305616 4.54805 0.186231 4.66743C0.0668464 4.78682 -0.000154698 4.94878 2.68218e-07 5.11762V8.45837C-2.50467e-07 8.76083 0.212885 9.02151 0.50925 9.08195C0.583199 9.09716 0.636306 9.1622 0.636417 9.2377V10.5263C0.636417 10.8778 0.92135 11.1627 1.27283 11.1627C1.62432 11.1627 1.90925 10.8778 1.90925 10.5263V9.25403C1.9091 9.21185 1.92574 9.17135 1.95552 9.14146C1.98529 9.11158 2.02573 9.09478 2.06792 9.09478H11.9321C11.9743 9.09478 12.0147 9.11158 12.0445 9.14146C12.0743 9.17135 12.0909 9.21185 12.0908 9.25403V10.5263C12.0908 10.8778 12.3757 11.1627 12.7272 11.1627C13.0787 11.1627 13.3636 10.8778 13.3636 10.5263V9.2377C13.3637 9.1622 13.4168 9.09716 13.4908 9.08195C13.7871 9.02151 14 8.76083 14 8.45837V5.11762C14.0002 4.94878 13.9332 4.78682 13.8138 4.66743C13.6944 4.54805 13.5324 4.48105 13.3636 4.4812H0.636417Z" fill="black"/>
+                            </svg>
+                            <span>4</span>
+                        </div>
+                        <div class="product__details-item">
+                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3334 9.33335C15.5178 9.33468 15.6936 9.41183 15.8194 9.54668C15.9456 9.67886 16.011 9.85761 16.0001 10.04C15.7997 13.3874 13.0268 15.9997 9.67339 16H6.32672C2.9733 15.9997 0.200387 13.3874 5.6118e-05 10.04C-0.00872703 9.85806 0.0561557 9.68023 0.180056 9.54668C0.304977 9.41018 0.481689 9.33272 0.666723 9.33335H3.07872C3.22571 9.33473 3.35626 9.23967 3.40006 9.09935C3.57416 8.54572 4.08637 8.1683 4.66672 8.16601H8.00339C8.58374 8.1683 9.09595 8.54572 9.27006 9.09935C9.31349 9.23849 9.4423 9.33327 9.58806 9.33335H13.1661C13.3502 9.33335 13.4994 9.18411 13.4994 9.00001V2.00001C13.5001 1.73655 13.3457 1.49736 13.1052 1.38968C12.8648 1.282 12.5834 1.32602 12.3874 1.50201L12.1141 1.77535C12.0251 1.86493 11.9944 1.99706 12.0347 2.11668C12.2672 2.80327 12.0908 3.56229 11.5794 4.07601L11.4461 4.21268C11.1857 4.47294 10.7637 4.47294 10.5034 4.21268L8.74006 2.44868C8.4798 2.18835 8.4798 1.76635 8.74006 1.50601L8.87672 1.36935C9.39654 0.872756 10.1471 0.701707 10.8307 0.924014C10.9495 0.96174 11.0793 0.930112 11.1674 0.842014L11.4761 0.533348C12.0593 -0.00563735 12.9063 -0.148438 13.634 0.169491C14.3618 0.487419 14.8325 1.20583 14.8334 2.00001V9.00001C14.8334 9.18411 14.9826 9.33335 15.1667 9.33335H15.3334ZM7.66672 13.5C7.85082 13.5 8.00006 13.3508 8.00006 13.1667V9.83335C8.00006 9.64925 7.85082 9.50001 7.66672 9.50001H5.00006C4.81596 9.50001 4.66672 9.64925 4.66672 9.83335V13.1667C4.66672 13.3508 4.81596 13.5 5.00006 13.5H7.66672Z" fill="black"/>
+                                <path d="M6 4.05868C6.09626 4.05952 6.19155 4.03951 6.27934 4.00002L7.49 3.44135C7.70663 3.34191 7.85374 3.13446 7.87594 2.89714C7.89813 2.65982 7.79203 2.42869 7.5976 2.2908C7.40318 2.15292 7.14996 2.12924 6.93334 2.22868L5.72067 2.78668C5.43638 2.91786 5.28168 3.2292 5.34883 3.53501C5.41599 3.84082 5.68691 4.05869 6 4.05868Z" fill="black"/>
+                                <path d="M9.41461 7.67261C9.75316 7.81703 10.1447 7.65976 10.2893 7.32128L10.8133 6.09461C10.9484 5.75814 10.7899 5.37535 10.4564 5.233C10.1229 5.09065 9.73678 5.24093 9.58728 5.57128L9.06661 6.79994C8.92312 7.13704 9.07853 7.52676 9.41461 7.67261Z" fill="black"/>
+                                <path d="M6.99064 6.05062C7.24968 6.31216 7.67168 6.31425 7.9333 6.05528L8.8813 5.11795C9.13584 4.85786 9.13478 4.4417 8.87891 4.18292C8.62304 3.92414 8.20692 3.91837 7.94397 4.16995L6.99597 5.10795C6.73424 5.36681 6.73185 5.78881 6.99064 6.05062Z" fill="black"/>
+                            </svg>
+                            <span>2</span>
+                        </div>
+                        <div class="product__details-item">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.66667 3C5.03486 3 5.33333 2.70152 5.33333 2.33333V0.666667C5.33333 0.298477 5.03486 0 4.66667 0C4.29848 0 4 0.298477 4 0.666667V2.33333C4 2.70152 4.29848 3 4.66667 3Z" fill="black"/>
+                                <path d="M3 4.66667C3 4.29848 2.70152 4 2.33333 4H0.666667C0.298477 4 0 4.29848 0 4.66667C0 5.03486 0.298477 5.33333 0.666667 5.33333H2.33333C2.70152 5.33333 3 5.03486 3 4.66667Z" fill="black"/>
+                                <path d="M2.33333 10.6666H0.666667C0.298477 10.6666 0 10.9651 0 11.3333C0 11.7015 0.298477 12 0.666667 12H2.33333C2.70152 12 3 11.7015 3 11.3333C3 10.9651 2.70152 10.6666 2.33333 10.6666Z" fill="black"/>
+                                <path d="M11.3334 0C10.9652 0 10.6667 0.298477 10.6667 0.666667V2.33333C10.6667 2.70152 10.9652 3 11.3334 3C11.7016 3 12.0001 2.70152 12.0001 2.33333V0.666667C12.0001 0.298477 11.7016 0 11.3334 0Z" fill="black"/>
+                                <path d="M4.66667 13C4.29848 13 4 13.2985 4 13.6667V15.3333C4 15.7015 4.29848 16 4.66667 16C5.03486 16 5.33333 15.7015 5.33333 15.3333V13.6667C5.33333 13.2985 5.03486 13 4.66667 13Z" fill="black"/>
+                                <path d="M11.3334 13C10.9652 13 10.6667 13.2985 10.6667 13.6667V15.3333C10.6667 15.7015 10.9652 16 11.3334 16C11.7016 16 12.0001 15.7015 12.0001 15.3333V13.6667C12.0001 13.2985 11.7016 13 11.3334 13Z" fill="black"/>
+                                <path d="M13.6667 5.33333H15.3333C15.7015 5.33333 16 5.03486 16 4.66667C16 4.29848 15.7015 4 15.3333 4H13.6667C13.2985 4 13 4.29848 13 4.66667C13 5.03486 13.2985 5.33333 13.6667 5.33333Z" fill="black"/>
+                                <path d="M15.3333 10.6666H13.6667C13.2985 10.6666 13 10.9651 13 11.3333C13 11.7015 13.2985 12 13.6667 12H15.3333C15.7015 12 16 11.7015 16 11.3333C16 10.9651 15.7015 10.6666 15.3333 10.6666Z" fill="black"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3333 4C11.7015 4 12 4.29848 12 4.66667V11.3333C12 11.7015 11.7015 12 11.3333 12H4.66667C4.29848 12 4 11.7015 4 11.3333V4.66667C4 4.29848 4.29848 4 4.66667 4H11.3333ZM10.3333 10.6667C10.5174 10.6667 10.6667 10.5174 10.6667 10.3333V5.66667C10.6667 5.48257 10.5174 5.33333 10.3333 5.33333H5.66667C5.48257 5.33333 5.33333 5.48257 5.33333 5.66667V10.3333C5.33333 10.5174 5.48257 10.6667 5.66667 10.6667H10.3333Z" fill="black"/>
+                            </svg>
+                            <span>2</span>
+                        </div>
+                        <div class="product__details-item">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.8 3.94466L8.13333 0.611331C8.04846 0.573567 7.95154 0.573567 7.86667 0.611331L0.2 3.94466C0.0785815 3.99766 6.82525e-05 4.11752 0 4.25V5.25C0 5.43409 0.149238 5.58333 0.333333 5.58333H15.6667C15.8508 5.58333 16 5.43409 16 5.25V4.25C15.9999 4.11752 15.9214 3.99766 15.8 3.94466Z" fill="black"/>
+                                <path d="M11.4999 9.58337H4.83325C4.55711 9.58337 4.33325 9.80723 4.33325 10.0834C4.33325 10.3595 4.55711 10.5834 4.83325 10.5834H11.4999C11.7761 10.5834 11.9999 10.3595 11.9999 10.0834C11.9999 9.80723 11.7761 9.58337 11.4999 9.58337V9.58337Z" fill="black"/>
+                                <path d="M11.4999 11.9166H4.83325C4.55711 11.9166 4.33325 12.1405 4.33325 12.4166C4.33325 12.6928 4.55711 12.9166 4.83325 12.9166H11.4999C11.7761 12.9166 11.9999 12.6928 11.9999 12.4166C11.9999 12.1405 11.7761 11.9166 11.4999 11.9166Z" fill="black"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3333 14.0834C15.7015 14.0834 16 14.3819 16 14.75C16 15.1182 15.7015 15.4167 15.3333 15.4167H0.666667C0.298477 15.4167 0 15.1182 0 14.75C0 14.3819 0.298477 14.0834 0.666667 14.0834H1C1.18409 14.0834 1.33333 13.9341 1.33333 13.75V6.91671C1.33333 6.73261 1.48257 6.58337 1.66667 6.58337H14.3333C14.5174 6.58337 14.6667 6.73261 14.6667 6.91671V13.75C14.6667 13.9341 14.8159 14.0834 15 14.0834H15.3333ZM4 8.25004C3.63181 8.25004 3.33333 8.54852 3.33333 8.91671V13.75C3.33333 13.9341 3.48257 14.0834 3.66667 14.0834H12.6667C12.8508 14.0834 13 13.9341 13 13.75V8.91671C13 8.54852 12.7015 8.25004 12.3333 8.25004H4Z" fill="black"/>
+                            </svg>
+                            <span>1</span>
+                        </div>
+                        <div class="product__details-item">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4999 2H14.3333C15.0696 2 15.6666 2.59695 15.6666 3.33333V14.6667C15.6666 15.403 15.0696 16 14.3333 16H1.66659C0.930206 16 0.333252 15.403 0.333252 14.6667V3.33333C0.333252 2.59695 0.930206 2 1.66659 2H2.66659C2.85068 2 2.99992 2.14924 2.99992 2.33333V3.83333C2.99992 4.10948 3.22378 4.33333 3.49992 4.33333C3.77606 4.33333 3.99992 4.10948 3.99992 3.83333V0.666667C3.99992 0.298477 4.2984 0 4.66659 0C5.03478 0 5.33325 0.298477 5.33325 0.666667V1.834C5.33362 1.92579 5.40813 2 5.49992 2H9.66658C9.85068 2 9.99992 2.14924 9.99992 2.33333V3.83333C9.99992 4.10948 10.2238 4.33333 10.4999 4.33333C10.7761 4.33333 10.9999 4.10948 10.9999 3.83333V0.666667C10.9999 0.298477 11.2984 0 11.6666 0C12.0348 0 12.3333 0.298477 12.3333 0.666667V1.83333C12.3333 1.92538 12.4079 2 12.4999 2ZM1.99992 14.6667H13.9999C14.184 14.6667 14.3333 14.5174 14.3333 14.3333V6.33333C14.3333 6.14924 14.184 6 13.9999 6H1.99992C1.81582 6 1.66659 6.14924 1.66659 6.33333V14.3333C1.66659 14.5174 1.81582 14.6667 1.99992 14.6667Z" fill="black"/>
+                            </svg>
+                            <span>2007</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product__details elements">
+                    <h3 class="product__details-title">Description</h3>
+                    <div class="elements__content">
+                        <p class="elements__text">At vero eos et iusto odio dignissimos ducimus, qui haec putat, ut ipsi auctori huius disciplinae placet: constituam, quid sit numeranda nec me ab illo inventore veritatis et expedita distinctio nam libero tempore, cum memoriter, tum etiam ac ratione.</p><br />
+                        <p class="elements__text">Si sine metu degendae praesidia firmissima filium morte multavit si sine causa? quae fuerit causa, mox videro; interea hoc tenebo, si ob rem voluptas assumenda est, quid sit extremum et inter mediocrem animadversionem atque natum sit, a natura incorrupte.</p><br />
+                        <p class="elements__text">Omne animal, simul atque in sanguinem suum tam inportuno tamque crudeli; sin, ut earum motus et accusamus et argumentandum et dolore suo sanciret militaris imperii disciplinam exercitumque in liberos atque haec ratio late patet in quo pertineant non possim.</p>
+                    </div>
+                </div>
+                <div class="product__details elements">
+                    <h3 class="product__details-title">Features</h3>
+                    <div class="elements__content elements__content-flex">
+                        <div class="elements__content-column">
+                            <p class="column-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8C0 3.58172 3.58172 0 8 0C12.4161 0.00514317 15.9949 3.58385 16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8ZM8.05467 11.6593L12.618 5.46667C12.7723 5.27572 12.8091 5.01545 12.7139 4.78918C12.6187 4.56291 12.4069 4.40726 12.1625 4.38403C11.9182 4.36079 11.6808 4.47373 11.5447 4.678L7.39333 10.312L4.676 8.138C4.38844 7.90788 3.96879 7.95444 3.73867 8.242C3.50855 8.52956 3.55511 8.94921 3.84267 9.17933L7.10133 11.7847C7.24379 11.896 7.42501 11.9455 7.60428 11.9219C7.78355 11.8983 7.94584 11.8037 8.05467 11.6593Z" fill="#FFAC12"/>
+                                </svg>
+                                <span class="column-item-text">Air Conditioning</span>
+                            </p>
+                            <p class="column-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8C0 3.58172 3.58172 0 8 0C12.4161 0.00514317 15.9949 3.58385 16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8ZM8.05467 11.6593L12.618 5.46667C12.7723 5.27572 12.8091 5.01545 12.7139 4.78918C12.6187 4.56291 12.4069 4.40726 12.1625 4.38403C11.9182 4.36079 11.6808 4.47373 11.5447 4.678L7.39333 10.312L4.676 8.138C4.38844 7.90788 3.96879 7.95444 3.73867 8.242C3.50855 8.52956 3.55511 8.94921 3.84267 9.17933L7.10133 11.7847C7.24379 11.896 7.42501 11.9455 7.60428 11.9219C7.78355 11.8983 7.94584 11.8037 8.05467 11.6593Z" fill="#FFAC12"/>
+                                </svg>
+                                <span class="column-item-text">Air Conditioning</span>
+                            </p>
+                            <p class="column-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8C0 3.58172 3.58172 0 8 0C12.4161 0.00514317 15.9949 3.58385 16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8ZM8.05467 11.6593L12.618 5.46667C12.7723 5.27572 12.8091 5.01545 12.7139 4.78918C12.6187 4.56291 12.4069 4.40726 12.1625 4.38403C11.9182 4.36079 11.6808 4.47373 11.5447 4.678L7.39333 10.312L4.676 8.138C4.38844 7.90788 3.96879 7.95444 3.73867 8.242C3.50855 8.52956 3.55511 8.94921 3.84267 9.17933L7.10133 11.7847C7.24379 11.896 7.42501 11.9455 7.60428 11.9219C7.78355 11.8983 7.94584 11.8037 8.05467 11.6593Z" fill="#FFAC12"/>
+                                </svg>
+                                <span class="column-item-text">Air Conditioning</span>
+                            </p>
+                            <p class="column-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8C0 3.58172 3.58172 0 8 0C12.4161 0.00514317 15.9949 3.58385 16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8ZM8.05467 11.6593L12.618 5.46667C12.7723 5.27572 12.8091 5.01545 12.7139 4.78918C12.6187 4.56291 12.4069 4.40726 12.1625 4.38403C11.9182 4.36079 11.6808 4.47373 11.5447 4.678L7.39333 10.312L4.676 8.138C4.38844 7.90788 3.96879 7.95444 3.73867 8.242C3.50855 8.52956 3.55511 8.94921 3.84267 9.17933L7.10133 11.7847C7.24379 11.896 7.42501 11.9455 7.60428 11.9219C7.78355 11.8983 7.94584 11.8037 8.05467 11.6593Z" fill="#FFAC12"/>
+                                </svg>
+                                <span class="column-item-text">Air Conditioning</span>
+                            </p>
+                            <p class="column-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8C0 3.58172 3.58172 0 8 0C12.4161 0.00514317 15.9949 3.58385 16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8ZM8.05467 11.6593L12.618 5.46667C12.7723 5.27572 12.8091 5.01545 12.7139 4.78918C12.6187 4.56291 12.4069 4.40726 12.1625 4.38403C11.9182 4.36079 11.6808 4.47373 11.5447 4.678L7.39333 10.312L4.676 8.138C4.38844 7.90788 3.96879 7.95444 3.73867 8.242C3.50855 8.52956 3.55511 8.94921 3.84267 9.17933L7.10133 11.7847C7.24379 11.896 7.42501 11.9455 7.60428 11.9219C7.78355 11.8983 7.94584 11.8037 8.05467 11.6593Z" fill="#FFAC12"/>
+                                </svg>
+                                <span class="column-item-text">Air Conditioning</span>
+                            </p>
+                        </div>
+                        <div class="elements__content-column">
+                            <p class="column-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8C0 3.58172 3.58172 0 8 0C12.4161 0.00514317 15.9949 3.58385 16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8ZM8.05467 11.6593L12.618 5.46667C12.7723 5.27572 12.8091 5.01545 12.7139 4.78918C12.6187 4.56291 12.4069 4.40726 12.1625 4.38403C11.9182 4.36079 11.6808 4.47373 11.5447 4.678L7.39333 10.312L4.676 8.138C4.38844 7.90788 3.96879 7.95444 3.73867 8.242C3.50855 8.52956 3.55511 8.94921 3.84267 9.17933L7.10133 11.7847C7.24379 11.896 7.42501 11.9455 7.60428 11.9219C7.78355 11.8983 7.94584 11.8037 8.05467 11.6593Z" fill="#FFAC12"/>
+                                </svg>
+                                <span class="column-item-text">Air Conditioning</span>
+                            </p>
+                            <p class="column-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8C0 3.58172 3.58172 0 8 0C12.4161 0.00514317 15.9949 3.58385 16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8ZM8.05467 11.6593L12.618 5.46667C12.7723 5.27572 12.8091 5.01545 12.7139 4.78918C12.6187 4.56291 12.4069 4.40726 12.1625 4.38403C11.9182 4.36079 11.6808 4.47373 11.5447 4.678L7.39333 10.312L4.676 8.138C4.38844 7.90788 3.96879 7.95444 3.73867 8.242C3.50855 8.52956 3.55511 8.94921 3.84267 9.17933L7.10133 11.7847C7.24379 11.896 7.42501 11.9455 7.60428 11.9219C7.78355 11.8983 7.94584 11.8037 8.05467 11.6593Z" fill="#FFAC12"/>
+                                </svg>
+                                <span class="column-item-text">Air Conditioning</span>
+                            </p>
+                            <p class="column-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8C0 3.58172 3.58172 0 8 0C12.4161 0.00514317 15.9949 3.58385 16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8ZM8.05467 11.6593L12.618 5.46667C12.7723 5.27572 12.8091 5.01545 12.7139 4.78918C12.6187 4.56291 12.4069 4.40726 12.1625 4.38403C11.9182 4.36079 11.6808 4.47373 11.5447 4.678L7.39333 10.312L4.676 8.138C4.38844 7.90788 3.96879 7.95444 3.73867 8.242C3.50855 8.52956 3.55511 8.94921 3.84267 9.17933L7.10133 11.7847C7.24379 11.896 7.42501 11.9455 7.60428 11.9219C7.78355 11.8983 7.94584 11.8037 8.05467 11.6593Z" fill="#FFAC12"/>
+                                </svg>
+                                <span class="column-item-text">Air Conditioning</span>
+                            </p>
+                            <p class="column-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8C0 3.58172 3.58172 0 8 0C12.4161 0.00514317 15.9949 3.58385 16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8ZM8.05467 11.6593L12.618 5.46667C12.7723 5.27572 12.8091 5.01545 12.7139 4.78918C12.6187 4.56291 12.4069 4.40726 12.1625 4.38403C11.9182 4.36079 11.6808 4.47373 11.5447 4.678L7.39333 10.312L4.676 8.138C4.38844 7.90788 3.96879 7.95444 3.73867 8.242C3.50855 8.52956 3.55511 8.94921 3.84267 9.17933L7.10133 11.7847C7.24379 11.896 7.42501 11.9455 7.60428 11.9219C7.78355 11.8983 7.94584 11.8037 8.05467 11.6593Z" fill="#FFAC12"/>
+                                </svg>
+                                <span class="column-item-text">Air Conditioning</span>
+                            </p>
+                            <p class="column-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8C0 3.58172 3.58172 0 8 0C12.4161 0.00514317 15.9949 3.58385 16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8ZM8.05467 11.6593L12.618 5.46667C12.7723 5.27572 12.8091 5.01545 12.7139 4.78918C12.6187 4.56291 12.4069 4.40726 12.1625 4.38403C11.9182 4.36079 11.6808 4.47373 11.5447 4.678L7.39333 10.312L4.676 8.138C4.38844 7.90788 3.96879 7.95444 3.73867 8.242C3.50855 8.52956 3.55511 8.94921 3.84267 9.17933L7.10133 11.7847C7.24379 11.896 7.42501 11.9455 7.60428 11.9219C7.78355 11.8983 7.94584 11.8037 8.05467 11.6593Z" fill="#FFAC12"/>
+                                </svg>
+                                <span class="column-item-text">Air Conditioning</span>
+                            </p>
+                        </div>
+                        <div class="elements__content-column">
+                            <p class="column-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8C0 3.58172 3.58172 0 8 0C12.4161 0.00514317 15.9949 3.58385 16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8ZM8.05467 11.6593L12.618 5.46667C12.7723 5.27572 12.8091 5.01545 12.7139 4.78918C12.6187 4.56291 12.4069 4.40726 12.1625 4.38403C11.9182 4.36079 11.6808 4.47373 11.5447 4.678L7.39333 10.312L4.676 8.138C4.38844 7.90788 3.96879 7.95444 3.73867 8.242C3.50855 8.52956 3.55511 8.94921 3.84267 9.17933L7.10133 11.7847C7.24379 11.896 7.42501 11.9455 7.60428 11.9219C7.78355 11.8983 7.94584 11.8037 8.05467 11.6593Z" fill="#FFAC12"/>
+                                </svg>
+                                <span class="column-item-text">Air Conditioning</span>
+                            </p>
+                            <p class="column-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8C0 3.58172 3.58172 0 8 0C12.4161 0.00514317 15.9949 3.58385 16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8ZM8.05467 11.6593L12.618 5.46667C12.7723 5.27572 12.8091 5.01545 12.7139 4.78918C12.6187 4.56291 12.4069 4.40726 12.1625 4.38403C11.9182 4.36079 11.6808 4.47373 11.5447 4.678L7.39333 10.312L4.676 8.138C4.38844 7.90788 3.96879 7.95444 3.73867 8.242C3.50855 8.52956 3.55511 8.94921 3.84267 9.17933L7.10133 11.7847C7.24379 11.896 7.42501 11.9455 7.60428 11.9219C7.78355 11.8983 7.94584 11.8037 8.05467 11.6593Z" fill="#FFAC12"/>
+                                </svg>
+                                <span class="column-item-text">Air Conditioning</span>
+                            </p>
+                            <p class="column-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8C0 3.58172 3.58172 0 8 0C12.4161 0.00514317 15.9949 3.58385 16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8ZM8.05467 11.6593L12.618 5.46667C12.7723 5.27572 12.8091 5.01545 12.7139 4.78918C12.6187 4.56291 12.4069 4.40726 12.1625 4.38403C11.9182 4.36079 11.6808 4.47373 11.5447 4.678L7.39333 10.312L4.676 8.138C4.38844 7.90788 3.96879 7.95444 3.73867 8.242C3.50855 8.52956 3.55511 8.94921 3.84267 9.17933L7.10133 11.7847C7.24379 11.896 7.42501 11.9455 7.60428 11.9219C7.78355 11.8983 7.94584 11.8037 8.05467 11.6593Z" fill="#FFAC12"/>
+                                </svg>
+                                <span class="column-item-text">Air Conditioning</span>
+                            </p>
+                            <p class="column-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8C0 3.58172 3.58172 0 8 0C12.4161 0.00514317 15.9949 3.58385 16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8ZM8.05467 11.6593L12.618 5.46667C12.7723 5.27572 12.8091 5.01545 12.7139 4.78918C12.6187 4.56291 12.4069 4.40726 12.1625 4.38403C11.9182 4.36079 11.6808 4.47373 11.5447 4.678L7.39333 10.312L4.676 8.138C4.38844 7.90788 3.96879 7.95444 3.73867 8.242C3.50855 8.52956 3.55511 8.94921 3.84267 9.17933L7.10133 11.7847C7.24379 11.896 7.42501 11.9455 7.60428 11.9219C7.78355 11.8983 7.94584 11.8037 8.05467 11.6593Z" fill="#FFAC12"/>
+                                </svg>
+                                <span class="column-item-text">Air Conditioning</span>
+                            </p>
+                            <p class="column-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8C0 3.58172 3.58172 0 8 0C12.4161 0.00514317 15.9949 3.58385 16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8ZM8.05467 11.6593L12.618 5.46667C12.7723 5.27572 12.8091 5.01545 12.7139 4.78918C12.6187 4.56291 12.4069 4.40726 12.1625 4.38403C11.9182 4.36079 11.6808 4.47373 11.5447 4.678L7.39333 10.312L4.676 8.138C4.38844 7.90788 3.96879 7.95444 3.73867 8.242C3.50855 8.52956 3.55511 8.94921 3.84267 9.17933L7.10133 11.7847C7.24379 11.896 7.42501 11.9455 7.60428 11.9219C7.78355 11.8983 7.94584 11.8037 8.05467 11.6593Z" fill="#FFAC12"/>
+                                </svg>
+                                <span class="column-item-text">Air Conditioning</span>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="section__product-right">
@@ -100,12 +261,301 @@
                                 <a href="#" class="profile__link">View profile</a>
                             </div>
                         </div>
-                        <input class="input" type="text" placeholder="Name">
-                        <input class="input" type="text" placeholder="Phone">
-                        <input class="input" type="email" placeholder="Email">
+                        <input class="input" type="text" placeholder="Name" required>
+                        <input class="input" type="number" placeholder="Phone" required>
+                        <input class="input" type="email" placeholder="Email" required>
                         <textarea class="input textarea" placeholder="Hello, I am interested in…"></textarea>
                         <button class="nav__link" type="submit">Learn more<i class="fas fa-long-arrow-alt-right nav__link-arrow"></i></button>
                     </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="listing">
+            <div class="listing__heading">
+                <div class="up__line"></div>
+                <div class="listing__box">
+                    <h3 class="listing__title">Similar listings</h3>
+                    <div class="listing__btn-box">
+                        <input type="radio" id="slider1" name="slider" value="1" onclick="slider(value)" checked>
+                        <label for="slider1">
+                            <svg width="22" height="32" viewBox="0 0 22 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.37236 14.3005L14.9681 0.70478C15.9078 -0.234927 17.4273 -0.234927 18.357 0.70478L20.6163 2.96407C21.556 3.90378 21.556 5.42331 20.6163 6.35301L10.9894 16L20.6263 25.637C21.566 26.5767 21.566 28.0962 20.6263 29.0259L18.367 31.2952C17.4273 32.2349 15.9078 32.2349 14.9781 31.2952L1.38236 17.6995C0.432652 16.7598 0.432652 15.2402 1.37236 14.3005Z" fill="black"/>
+                            </svg>
+                        </label>
+                        <input type="radio" id="slider2" name="slider" value="2" onclick="slider(value)">
+                        <label for="slider2">
+                            <svg width="22" height="32" viewBox="0 0 22 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.6226 17.6995L7.02684 31.2952C6.08714 32.2349 4.56761 32.2349 3.6379 31.2952L1.37861 29.0359C0.438901 28.0962 0.438901 26.5767 1.37861 25.647L11.0156 16.01L1.37861 6.37301C0.438901 5.4333 0.438901 3.91378 1.37861 2.98407L3.6279 0.70478C4.56761 -0.234927 6.08714 -0.234927 7.01685 0.70478L20.6126 14.3005C21.5623 15.2402 21.5623 16.7598 20.6226 17.6995Z" fill="black"/>
+                            </svg>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="content__cards" id="listing__cards">
+                <div class="card">
+                    <a href="#" class="card__img-link">
+                        <div class="card__img">
+                            <img src="../img/card1.png" alt="card1">
+                        </div>
+                    </a>
+                    <div class="card__desc">
+                        <a href="property.html" class="desc__link">
+                            <h4 class="desc__title">Malto House</h4>
+                        </a>
+                        <div class="desc__box">
+                            <div class="box__count">
+                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.04568 1.93541H7.95435C8.83758 1.93621 9.60446 2.54396 9.80701 3.40366C9.82401 3.47533 9.88794 3.52599 9.9616 3.52616H12.8864C12.9286 3.52631 12.9691 3.50966 12.999 3.47989C13.0289 3.45012 13.0457 3.40967 13.0457 3.36749V1.77616C13.0457 1.43863 12.9116 1.11494 12.6728 0.876333C12.4341 0.637724 12.1104 0.503752 11.7728 0.503906H2.22718C1.88966 0.503752 1.5659 0.637724 1.32719 0.876333C1.08847 1.11494 0.954346 1.43863 0.954346 1.77616V3.36749C0.954345 3.40967 0.971142 3.45012 1.00102 3.47989C1.03091 3.50966 1.07141 3.52631 1.1136 3.52616H4.03843C4.11224 3.52642 4.1764 3.47557 4.19301 3.40366C4.39557 2.54396 5.16244 1.93621 6.04568 1.93541Z" fill="black"/>
+                                    <path d="M0.636417 4.48096C0.467581 4.4808 0.305616 4.5478 0.186231 4.66719C0.0668464 4.78657 -0.000154698 4.94854 2.68218e-07 5.11737V8.45812C-2.50467e-07 8.76059 0.212885 9.02127 0.50925 9.08171C0.583199 9.09692 0.636306 9.16196 0.636417 9.23746V10.526C0.636417 10.8775 0.92135 11.1625 1.27283 11.1625C1.62432 11.1625 1.90925 10.8775 1.90925 10.526V9.25379C1.9091 9.21161 1.92574 9.1711 1.95552 9.14122C1.98529 9.11134 2.02573 9.09454 2.06792 9.09454H11.9321C11.9743 9.09454 12.0147 9.11134 12.0445 9.14122C12.0743 9.1711 12.0909 9.21161 12.0908 9.25379V10.526C12.0908 10.8775 12.3757 11.1625 12.7272 11.1625C13.0787 11.1625 13.3636 10.8775 13.3636 10.526V9.23746C13.3637 9.16196 13.4168 9.09692 13.4908 9.08171C13.7871 9.02127 14 8.76059 14 8.45812V5.11737C14.0002 4.94854 13.9332 4.78657 13.8138 4.66719C13.6944 4.5478 13.5324 4.4808 13.3636 4.48096H0.636417Z" fill="black"/>
+                                </svg>
+                                <span class="desc__span">4</span>
+                            </div>
+                            <div class="box__count count">
+                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3333 9.33335C15.5178 9.33468 15.6935 9.41183 15.8193 9.54668C15.9455 9.67886 16.011 9.85761 16 10.04C15.7997 13.3874 13.0267 15.9997 9.67333 16H6.32666C2.97324 15.9997 0.200326 13.3874 -4.91715e-06 10.04C-0.00878807 9.85806 0.0560946 9.68023 0.179995 9.54668C0.304916 9.41018 0.481628 9.33272 0.666662 9.33335H3.07866C3.22565 9.33473 3.3562 9.23967 3.4 9.09935C3.5741 8.54572 4.08631 8.1683 4.66666 8.16601H8.00333C8.58368 8.1683 9.09589 8.54572 9.26999 9.09935C9.31343 9.23849 9.44223 9.33327 9.588 9.33335H13.166C13.3501 9.33335 13.4993 9.18411 13.4993 9.00001V2.00001C13.5001 1.73655 13.3456 1.49736 13.1051 1.38968C12.8647 1.282 12.5834 1.32602 12.3873 1.50201L12.114 1.77535C12.0251 1.86493 11.9943 1.99706 12.0347 2.11668C12.2671 2.80327 12.0907 3.56229 11.5793 4.07601L11.446 4.21268C11.1857 4.47294 10.7637 4.47294 10.5033 4.21268L8.74 2.44868C8.47974 2.18835 8.47974 1.76635 8.74 1.50601L8.87666 1.36935C9.39648 0.872756 10.147 0.701707 10.8307 0.924014C10.9494 0.96174 11.0792 0.930112 11.1673 0.842014L11.476 0.533348C12.0593 -0.00563735 12.9062 -0.148438 13.634 0.169491C14.3617 0.487419 14.8324 1.20583 14.8333 2.00001V9.00001C14.8333 9.18411 14.9826 9.33335 15.1667 9.33335H15.3333ZM7.66666 13.5C7.85076 13.5 8 13.3508 8 13.1667V9.83335C8 9.64925 7.85076 9.50001 7.66666 9.50001H5C4.8159 9.50001 4.66666 9.64925 4.66666 9.83335V13.1667C4.66666 13.3508 4.8159 13.5 5 13.5H7.66666Z" fill="black"/>
+                                    <path d="M6 4.05856C6.09626 4.0594 6.19155 4.03939 6.27934 3.99989L7.49 3.44123C7.70663 3.34179 7.85374 3.13434 7.87594 2.89702C7.89813 2.6597 7.79203 2.42856 7.5976 2.29068C7.40318 2.1528 7.14996 2.12912 6.93334 2.22856L5.72067 2.78656C5.43638 2.91774 5.28168 3.22908 5.34883 3.53489C5.41599 3.8407 5.68691 4.05857 6 4.05856Z" fill="black"/>
+                                    <path d="M9.41467 7.67273C9.75322 7.81715 10.1448 7.65988 10.2893 7.3214L10.8133 6.09473C10.9485 5.75826 10.7899 5.37548 10.4564 5.23312C10.1229 5.09077 9.73684 5.24106 9.58734 5.5714L9.06667 6.80007C8.92318 7.13716 9.07859 7.52688 9.41467 7.67273Z" fill="black"/>
+                                    <path d="M6.99064 6.05074C7.24968 6.31229 7.67168 6.31438 7.9333 6.05541L8.8813 5.11807C9.13584 4.85799 9.13478 4.44183 8.87891 4.18304C8.62304 3.92426 8.20692 3.91849 7.94397 4.17007L6.99597 5.10807C6.73424 5.36693 6.73185 5.78894 6.99064 6.05074Z" fill="black"/>
+                                </svg>
+                                <span class="desc__span">2</span>
+                            </div>
+                            <div class="box__count">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.66667 3C5.03486 3 5.33333 2.70152 5.33333 2.33333V0.666667C5.33333 0.298477 5.03486 0 4.66667 0C4.29848 0 4 0.298477 4 0.666667V2.33333C4 2.70152 4.29848 3 4.66667 3Z" fill="black"/>
+                                    <path d="M3 4.66667C3 4.29848 2.70152 4 2.33333 4H0.666667C0.298477 4 0 4.29848 0 4.66667C0 5.03486 0.298477 5.33333 0.666667 5.33333H2.33333C2.70152 5.33333 3 5.03486 3 4.66667Z" fill="black"/>
+                                    <path d="M2.33333 10.6667H0.666667C0.298477 10.6667 0 10.9652 0 11.3334C0 11.7016 0.298477 12.0001 0.666667 12.0001H2.33333C2.70152 12.0001 3 11.7016 3 11.3334C3 10.9652 2.70152 10.6667 2.33333 10.6667Z" fill="black"/>
+                                    <path d="M11.3334 0C10.9652 0 10.6667 0.298477 10.6667 0.666667V2.33333C10.6667 2.70152 10.9652 3 11.3334 3C11.7015 3 12 2.70152 12 2.33333V0.666667C12 0.298477 11.7015 0 11.3334 0Z" fill="black"/>
+                                    <path d="M4.66667 13C4.29848 13 4 13.2985 4 13.6667V15.3333C4 15.7015 4.29848 16 4.66667 16C5.03486 16 5.33333 15.7015 5.33333 15.3333V13.6667C5.33333 13.2985 5.03486 13 4.66667 13Z" fill="black"/>
+                                    <path d="M11.3334 13C10.9652 13 10.6667 13.2985 10.6667 13.6667V15.3333C10.6667 15.7015 10.9652 16 11.3334 16C11.7015 16 12 15.7015 12 15.3333V13.6667C12 13.2985 11.7015 13 11.3334 13Z" fill="black"/>
+                                    <path d="M13.6667 5.33333H15.3333C15.7015 5.33333 16 5.03486 16 4.66667C16 4.29848 15.7015 4 15.3333 4H13.6667C13.2985 4 13 4.29848 13 4.66667C13 5.03486 13.2985 5.33333 13.6667 5.33333Z" fill="black"/>
+                                    <path d="M15.3333 10.6667H13.6667C13.2985 10.6667 13 10.9652 13 11.3334C13 11.7016 13.2985 12.0001 13.6667 12.0001H15.3333C15.7015 12.0001 16 11.7016 16 11.3334C16 10.9652 15.7015 10.6667 15.3333 10.6667Z" fill="black"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3333 4C11.7015 4 12 4.29848 12 4.66667V11.3333C12 11.7015 11.7015 12 11.3333 12H4.66667C4.29848 12 4 11.7015 4 11.3333V4.66667C4 4.29848 4.29848 4 4.66667 4H11.3333ZM10.3333 10.6667C10.5174 10.6667 10.6667 10.5174 10.6667 10.3333V5.66667C10.6667 5.48257 10.5174 5.33333 10.3333 5.33333H5.66667C5.48257 5.33333 5.33333 5.48257 5.33333 5.66667V10.3333C5.33333 10.5174 5.48257 10.6667 5.66667 10.6667H10.3333Z" fill="black"/>
+                                </svg>
+                                <span class="desc__span">2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <a href="#" class="card__img-link">
+                        <div class="card__img">
+                            <img src="../img/card2.png" alt="card1">
+                        </div>
+                    </a>
+                    <div class="card__desc">
+                        <a href="property.html" class="desc__link">
+                            <h4 class="desc__title">Malto House</h4>
+                        </a>
+                        <div class="desc__box">
+                            <div class="box__count">
+                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.04568 1.93541H7.95435C8.83758 1.93621 9.60446 2.54396 9.80701 3.40366C9.82401 3.47533 9.88794 3.52599 9.9616 3.52616H12.8864C12.9286 3.52631 12.9691 3.50966 12.999 3.47989C13.0289 3.45012 13.0457 3.40967 13.0457 3.36749V1.77616C13.0457 1.43863 12.9116 1.11494 12.6728 0.876333C12.4341 0.637724 12.1104 0.503752 11.7728 0.503906H2.22718C1.88966 0.503752 1.5659 0.637724 1.32719 0.876333C1.08847 1.11494 0.954346 1.43863 0.954346 1.77616V3.36749C0.954345 3.40967 0.971142 3.45012 1.00102 3.47989C1.03091 3.50966 1.07141 3.52631 1.1136 3.52616H4.03843C4.11224 3.52642 4.1764 3.47557 4.19301 3.40366C4.39557 2.54396 5.16244 1.93621 6.04568 1.93541Z" fill="black"/>
+                                    <path d="M0.636417 4.48096C0.467581 4.4808 0.305616 4.5478 0.186231 4.66719C0.0668464 4.78657 -0.000154698 4.94854 2.68218e-07 5.11737V8.45812C-2.50467e-07 8.76059 0.212885 9.02127 0.50925 9.08171C0.583199 9.09692 0.636306 9.16196 0.636417 9.23746V10.526C0.636417 10.8775 0.92135 11.1625 1.27283 11.1625C1.62432 11.1625 1.90925 10.8775 1.90925 10.526V9.25379C1.9091 9.21161 1.92574 9.1711 1.95552 9.14122C1.98529 9.11134 2.02573 9.09454 2.06792 9.09454H11.9321C11.9743 9.09454 12.0147 9.11134 12.0445 9.14122C12.0743 9.1711 12.0909 9.21161 12.0908 9.25379V10.526C12.0908 10.8775 12.3757 11.1625 12.7272 11.1625C13.0787 11.1625 13.3636 10.8775 13.3636 10.526V9.23746C13.3637 9.16196 13.4168 9.09692 13.4908 9.08171C13.7871 9.02127 14 8.76059 14 8.45812V5.11737C14.0002 4.94854 13.9332 4.78657 13.8138 4.66719C13.6944 4.5478 13.5324 4.4808 13.3636 4.48096H0.636417Z" fill="black"/>
+                                </svg>
+                                <span class="desc__span">4</span>
+                            </div>
+                            <div class="box__count count">
+                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3333 9.33335C15.5178 9.33468 15.6935 9.41183 15.8193 9.54668C15.9455 9.67886 16.011 9.85761 16 10.04C15.7997 13.3874 13.0267 15.9997 9.67333 16H6.32666C2.97324 15.9997 0.200326 13.3874 -4.91715e-06 10.04C-0.00878807 9.85806 0.0560946 9.68023 0.179995 9.54668C0.304916 9.41018 0.481628 9.33272 0.666662 9.33335H3.07866C3.22565 9.33473 3.3562 9.23967 3.4 9.09935C3.5741 8.54572 4.08631 8.1683 4.66666 8.16601H8.00333C8.58368 8.1683 9.09589 8.54572 9.26999 9.09935C9.31343 9.23849 9.44223 9.33327 9.588 9.33335H13.166C13.3501 9.33335 13.4993 9.18411 13.4993 9.00001V2.00001C13.5001 1.73655 13.3456 1.49736 13.1051 1.38968C12.8647 1.282 12.5834 1.32602 12.3873 1.50201L12.114 1.77535C12.0251 1.86493 11.9943 1.99706 12.0347 2.11668C12.2671 2.80327 12.0907 3.56229 11.5793 4.07601L11.446 4.21268C11.1857 4.47294 10.7637 4.47294 10.5033 4.21268L8.74 2.44868C8.47974 2.18835 8.47974 1.76635 8.74 1.50601L8.87666 1.36935C9.39648 0.872756 10.147 0.701707 10.8307 0.924014C10.9494 0.96174 11.0792 0.930112 11.1673 0.842014L11.476 0.533348C12.0593 -0.00563735 12.9062 -0.148438 13.634 0.169491C14.3617 0.487419 14.8324 1.20583 14.8333 2.00001V9.00001C14.8333 9.18411 14.9826 9.33335 15.1667 9.33335H15.3333ZM7.66666 13.5C7.85076 13.5 8 13.3508 8 13.1667V9.83335C8 9.64925 7.85076 9.50001 7.66666 9.50001H5C4.8159 9.50001 4.66666 9.64925 4.66666 9.83335V13.1667C4.66666 13.3508 4.8159 13.5 5 13.5H7.66666Z" fill="black"/>
+                                    <path d="M6 4.05856C6.09626 4.0594 6.19155 4.03939 6.27934 3.99989L7.49 3.44123C7.70663 3.34179 7.85374 3.13434 7.87594 2.89702C7.89813 2.6597 7.79203 2.42856 7.5976 2.29068C7.40318 2.1528 7.14996 2.12912 6.93334 2.22856L5.72067 2.78656C5.43638 2.91774 5.28168 3.22908 5.34883 3.53489C5.41599 3.8407 5.68691 4.05857 6 4.05856Z" fill="black"/>
+                                    <path d="M9.41467 7.67273C9.75322 7.81715 10.1448 7.65988 10.2893 7.3214L10.8133 6.09473C10.9485 5.75826 10.7899 5.37548 10.4564 5.23312C10.1229 5.09077 9.73684 5.24106 9.58734 5.5714L9.06667 6.80007C8.92318 7.13716 9.07859 7.52688 9.41467 7.67273Z" fill="black"/>
+                                    <path d="M6.99064 6.05074C7.24968 6.31229 7.67168 6.31438 7.9333 6.05541L8.8813 5.11807C9.13584 4.85799 9.13478 4.44183 8.87891 4.18304C8.62304 3.92426 8.20692 3.91849 7.94397 4.17007L6.99597 5.10807C6.73424 5.36693 6.73185 5.78894 6.99064 6.05074Z" fill="black"/>
+                                </svg>
+                                <span class="desc__span">2</span>
+                            </div>
+                            <div class="box__count">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.66667 3C5.03486 3 5.33333 2.70152 5.33333 2.33333V0.666667C5.33333 0.298477 5.03486 0 4.66667 0C4.29848 0 4 0.298477 4 0.666667V2.33333C4 2.70152 4.29848 3 4.66667 3Z" fill="black"/>
+                                    <path d="M3 4.66667C3 4.29848 2.70152 4 2.33333 4H0.666667C0.298477 4 0 4.29848 0 4.66667C0 5.03486 0.298477 5.33333 0.666667 5.33333H2.33333C2.70152 5.33333 3 5.03486 3 4.66667Z" fill="black"/>
+                                    <path d="M2.33333 10.6667H0.666667C0.298477 10.6667 0 10.9652 0 11.3334C0 11.7016 0.298477 12.0001 0.666667 12.0001H2.33333C2.70152 12.0001 3 11.7016 3 11.3334C3 10.9652 2.70152 10.6667 2.33333 10.6667Z" fill="black"/>
+                                    <path d="M11.3334 0C10.9652 0 10.6667 0.298477 10.6667 0.666667V2.33333C10.6667 2.70152 10.9652 3 11.3334 3C11.7015 3 12 2.70152 12 2.33333V0.666667C12 0.298477 11.7015 0 11.3334 0Z" fill="black"/>
+                                    <path d="M4.66667 13C4.29848 13 4 13.2985 4 13.6667V15.3333C4 15.7015 4.29848 16 4.66667 16C5.03486 16 5.33333 15.7015 5.33333 15.3333V13.6667C5.33333 13.2985 5.03486 13 4.66667 13Z" fill="black"/>
+                                    <path d="M11.3334 13C10.9652 13 10.6667 13.2985 10.6667 13.6667V15.3333C10.6667 15.7015 10.9652 16 11.3334 16C11.7015 16 12 15.7015 12 15.3333V13.6667C12 13.2985 11.7015 13 11.3334 13Z" fill="black"/>
+                                    <path d="M13.6667 5.33333H15.3333C15.7015 5.33333 16 5.03486 16 4.66667C16 4.29848 15.7015 4 15.3333 4H13.6667C13.2985 4 13 4.29848 13 4.66667C13 5.03486 13.2985 5.33333 13.6667 5.33333Z" fill="black"/>
+                                    <path d="M15.3333 10.6667H13.6667C13.2985 10.6667 13 10.9652 13 11.3334C13 11.7016 13.2985 12.0001 13.6667 12.0001H15.3333C15.7015 12.0001 16 11.7016 16 11.3334C16 10.9652 15.7015 10.6667 15.3333 10.6667Z" fill="black"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3333 4C11.7015 4 12 4.29848 12 4.66667V11.3333C12 11.7015 11.7015 12 11.3333 12H4.66667C4.29848 12 4 11.7015 4 11.3333V4.66667C4 4.29848 4.29848 4 4.66667 4H11.3333ZM10.3333 10.6667C10.5174 10.6667 10.6667 10.5174 10.6667 10.3333V5.66667C10.6667 5.48257 10.5174 5.33333 10.3333 5.33333H5.66667C5.48257 5.33333 5.33333 5.48257 5.33333 5.66667V10.3333C5.33333 10.5174 5.48257 10.6667 5.66667 10.6667H10.3333Z" fill="black"/>
+                                </svg>
+                                <span class="desc__span">2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <a href="#" class="card__img-link">
+                        <div class="card__img">
+                            <img src="../img/card3.png" alt="card1">
+                        </div>
+                    </a>
+                    <div class="card__desc">
+                        <a href="property.html" class="desc__link">
+                            <h4 class="desc__title">Malto House</h4>
+                        </a>
+                        <div class="desc__box">
+                            <div class="box__count">
+                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.04568 1.93541H7.95435C8.83758 1.93621 9.60446 2.54396 9.80701 3.40366C9.82401 3.47533 9.88794 3.52599 9.9616 3.52616H12.8864C12.9286 3.52631 12.9691 3.50966 12.999 3.47989C13.0289 3.45012 13.0457 3.40967 13.0457 3.36749V1.77616C13.0457 1.43863 12.9116 1.11494 12.6728 0.876333C12.4341 0.637724 12.1104 0.503752 11.7728 0.503906H2.22718C1.88966 0.503752 1.5659 0.637724 1.32719 0.876333C1.08847 1.11494 0.954346 1.43863 0.954346 1.77616V3.36749C0.954345 3.40967 0.971142 3.45012 1.00102 3.47989C1.03091 3.50966 1.07141 3.52631 1.1136 3.52616H4.03843C4.11224 3.52642 4.1764 3.47557 4.19301 3.40366C4.39557 2.54396 5.16244 1.93621 6.04568 1.93541Z" fill="black"/>
+                                    <path d="M0.636417 4.48096C0.467581 4.4808 0.305616 4.5478 0.186231 4.66719C0.0668464 4.78657 -0.000154698 4.94854 2.68218e-07 5.11737V8.45812C-2.50467e-07 8.76059 0.212885 9.02127 0.50925 9.08171C0.583199 9.09692 0.636306 9.16196 0.636417 9.23746V10.526C0.636417 10.8775 0.92135 11.1625 1.27283 11.1625C1.62432 11.1625 1.90925 10.8775 1.90925 10.526V9.25379C1.9091 9.21161 1.92574 9.1711 1.95552 9.14122C1.98529 9.11134 2.02573 9.09454 2.06792 9.09454H11.9321C11.9743 9.09454 12.0147 9.11134 12.0445 9.14122C12.0743 9.1711 12.0909 9.21161 12.0908 9.25379V10.526C12.0908 10.8775 12.3757 11.1625 12.7272 11.1625C13.0787 11.1625 13.3636 10.8775 13.3636 10.526V9.23746C13.3637 9.16196 13.4168 9.09692 13.4908 9.08171C13.7871 9.02127 14 8.76059 14 8.45812V5.11737C14.0002 4.94854 13.9332 4.78657 13.8138 4.66719C13.6944 4.5478 13.5324 4.4808 13.3636 4.48096H0.636417Z" fill="black"/>
+                                </svg>
+                                <span class="desc__span">4</span>
+                            </div>
+                            <div class="box__count count">
+                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3333 9.33335C15.5178 9.33468 15.6935 9.41183 15.8193 9.54668C15.9455 9.67886 16.011 9.85761 16 10.04C15.7997 13.3874 13.0267 15.9997 9.67333 16H6.32666C2.97324 15.9997 0.200326 13.3874 -4.91715e-06 10.04C-0.00878807 9.85806 0.0560946 9.68023 0.179995 9.54668C0.304916 9.41018 0.481628 9.33272 0.666662 9.33335H3.07866C3.22565 9.33473 3.3562 9.23967 3.4 9.09935C3.5741 8.54572 4.08631 8.1683 4.66666 8.16601H8.00333C8.58368 8.1683 9.09589 8.54572 9.26999 9.09935C9.31343 9.23849 9.44223 9.33327 9.588 9.33335H13.166C13.3501 9.33335 13.4993 9.18411 13.4993 9.00001V2.00001C13.5001 1.73655 13.3456 1.49736 13.1051 1.38968C12.8647 1.282 12.5834 1.32602 12.3873 1.50201L12.114 1.77535C12.0251 1.86493 11.9943 1.99706 12.0347 2.11668C12.2671 2.80327 12.0907 3.56229 11.5793 4.07601L11.446 4.21268C11.1857 4.47294 10.7637 4.47294 10.5033 4.21268L8.74 2.44868C8.47974 2.18835 8.47974 1.76635 8.74 1.50601L8.87666 1.36935C9.39648 0.872756 10.147 0.701707 10.8307 0.924014C10.9494 0.96174 11.0792 0.930112 11.1673 0.842014L11.476 0.533348C12.0593 -0.00563735 12.9062 -0.148438 13.634 0.169491C14.3617 0.487419 14.8324 1.20583 14.8333 2.00001V9.00001C14.8333 9.18411 14.9826 9.33335 15.1667 9.33335H15.3333ZM7.66666 13.5C7.85076 13.5 8 13.3508 8 13.1667V9.83335C8 9.64925 7.85076 9.50001 7.66666 9.50001H5C4.8159 9.50001 4.66666 9.64925 4.66666 9.83335V13.1667C4.66666 13.3508 4.8159 13.5 5 13.5H7.66666Z" fill="black"/>
+                                    <path d="M6 4.05856C6.09626 4.0594 6.19155 4.03939 6.27934 3.99989L7.49 3.44123C7.70663 3.34179 7.85374 3.13434 7.87594 2.89702C7.89813 2.6597 7.79203 2.42856 7.5976 2.29068C7.40318 2.1528 7.14996 2.12912 6.93334 2.22856L5.72067 2.78656C5.43638 2.91774 5.28168 3.22908 5.34883 3.53489C5.41599 3.8407 5.68691 4.05857 6 4.05856Z" fill="black"/>
+                                    <path d="M9.41467 7.67273C9.75322 7.81715 10.1448 7.65988 10.2893 7.3214L10.8133 6.09473C10.9485 5.75826 10.7899 5.37548 10.4564 5.23312C10.1229 5.09077 9.73684 5.24106 9.58734 5.5714L9.06667 6.80007C8.92318 7.13716 9.07859 7.52688 9.41467 7.67273Z" fill="black"/>
+                                    <path d="M6.99064 6.05074C7.24968 6.31229 7.67168 6.31438 7.9333 6.05541L8.8813 5.11807C9.13584 4.85799 9.13478 4.44183 8.87891 4.18304C8.62304 3.92426 8.20692 3.91849 7.94397 4.17007L6.99597 5.10807C6.73424 5.36693 6.73185 5.78894 6.99064 6.05074Z" fill="black"/>
+                                </svg>
+                                <span class="desc__span">2</span>
+                            </div>
+                            <div class="box__count">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.66667 3C5.03486 3 5.33333 2.70152 5.33333 2.33333V0.666667C5.33333 0.298477 5.03486 0 4.66667 0C4.29848 0 4 0.298477 4 0.666667V2.33333C4 2.70152 4.29848 3 4.66667 3Z" fill="black"/>
+                                    <path d="M3 4.66667C3 4.29848 2.70152 4 2.33333 4H0.666667C0.298477 4 0 4.29848 0 4.66667C0 5.03486 0.298477 5.33333 0.666667 5.33333H2.33333C2.70152 5.33333 3 5.03486 3 4.66667Z" fill="black"/>
+                                    <path d="M2.33333 10.6667H0.666667C0.298477 10.6667 0 10.9652 0 11.3334C0 11.7016 0.298477 12.0001 0.666667 12.0001H2.33333C2.70152 12.0001 3 11.7016 3 11.3334C3 10.9652 2.70152 10.6667 2.33333 10.6667Z" fill="black"/>
+                                    <path d="M11.3334 0C10.9652 0 10.6667 0.298477 10.6667 0.666667V2.33333C10.6667 2.70152 10.9652 3 11.3334 3C11.7015 3 12 2.70152 12 2.33333V0.666667C12 0.298477 11.7015 0 11.3334 0Z" fill="black"/>
+                                    <path d="M4.66667 13C4.29848 13 4 13.2985 4 13.6667V15.3333C4 15.7015 4.29848 16 4.66667 16C5.03486 16 5.33333 15.7015 5.33333 15.3333V13.6667C5.33333 13.2985 5.03486 13 4.66667 13Z" fill="black"/>
+                                    <path d="M11.3334 13C10.9652 13 10.6667 13.2985 10.6667 13.6667V15.3333C10.6667 15.7015 10.9652 16 11.3334 16C11.7015 16 12 15.7015 12 15.3333V13.6667C12 13.2985 11.7015 13 11.3334 13Z" fill="black"/>
+                                    <path d="M13.6667 5.33333H15.3333C15.7015 5.33333 16 5.03486 16 4.66667C16 4.29848 15.7015 4 15.3333 4H13.6667C13.2985 4 13 4.29848 13 4.66667C13 5.03486 13.2985 5.33333 13.6667 5.33333Z" fill="black"/>
+                                    <path d="M15.3333 10.6667H13.6667C13.2985 10.6667 13 10.9652 13 11.3334C13 11.7016 13.2985 12.0001 13.6667 12.0001H15.3333C15.7015 12.0001 16 11.7016 16 11.3334C16 10.9652 15.7015 10.6667 15.3333 10.6667Z" fill="black"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3333 4C11.7015 4 12 4.29848 12 4.66667V11.3333C12 11.7015 11.7015 12 11.3333 12H4.66667C4.29848 12 4 11.7015 4 11.3333V4.66667C4 4.29848 4.29848 4 4.66667 4H11.3333ZM10.3333 10.6667C10.5174 10.6667 10.6667 10.5174 10.6667 10.3333V5.66667C10.6667 5.48257 10.5174 5.33333 10.3333 5.33333H5.66667C5.48257 5.33333 5.33333 5.48257 5.33333 5.66667V10.3333C5.33333 10.5174 5.48257 10.6667 5.66667 10.6667H10.3333Z" fill="black"/>
+                                </svg>
+                                <span class="desc__span">2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <a href="#" class="card__img-link">
+                        <div class="card__img">
+                            <img src="../img/card4.png" alt="card1">
+                        </div>
+                    </a>
+                    <div class="card__desc">
+                        <a href="property.html" class="desc__link">
+                            <h4 class="desc__title">Malto House</h4>
+                        </a>
+                        <div class="desc__box">
+                            <div class="box__count">
+                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.04568 1.93541H7.95435C8.83758 1.93621 9.60446 2.54396 9.80701 3.40366C9.82401 3.47533 9.88794 3.52599 9.9616 3.52616H12.8864C12.9286 3.52631 12.9691 3.50966 12.999 3.47989C13.0289 3.45012 13.0457 3.40967 13.0457 3.36749V1.77616C13.0457 1.43863 12.9116 1.11494 12.6728 0.876333C12.4341 0.637724 12.1104 0.503752 11.7728 0.503906H2.22718C1.88966 0.503752 1.5659 0.637724 1.32719 0.876333C1.08847 1.11494 0.954346 1.43863 0.954346 1.77616V3.36749C0.954345 3.40967 0.971142 3.45012 1.00102 3.47989C1.03091 3.50966 1.07141 3.52631 1.1136 3.52616H4.03843C4.11224 3.52642 4.1764 3.47557 4.19301 3.40366C4.39557 2.54396 5.16244 1.93621 6.04568 1.93541Z" fill="black"/>
+                                    <path d="M0.636417 4.48096C0.467581 4.4808 0.305616 4.5478 0.186231 4.66719C0.0668464 4.78657 -0.000154698 4.94854 2.68218e-07 5.11737V8.45812C-2.50467e-07 8.76059 0.212885 9.02127 0.50925 9.08171C0.583199 9.09692 0.636306 9.16196 0.636417 9.23746V10.526C0.636417 10.8775 0.92135 11.1625 1.27283 11.1625C1.62432 11.1625 1.90925 10.8775 1.90925 10.526V9.25379C1.9091 9.21161 1.92574 9.1711 1.95552 9.14122C1.98529 9.11134 2.02573 9.09454 2.06792 9.09454H11.9321C11.9743 9.09454 12.0147 9.11134 12.0445 9.14122C12.0743 9.1711 12.0909 9.21161 12.0908 9.25379V10.526C12.0908 10.8775 12.3757 11.1625 12.7272 11.1625C13.0787 11.1625 13.3636 10.8775 13.3636 10.526V9.23746C13.3637 9.16196 13.4168 9.09692 13.4908 9.08171C13.7871 9.02127 14 8.76059 14 8.45812V5.11737C14.0002 4.94854 13.9332 4.78657 13.8138 4.66719C13.6944 4.5478 13.5324 4.4808 13.3636 4.48096H0.636417Z" fill="black"/>
+                                </svg>
+                                <span class="desc__span">4</span>
+                            </div>
+                            <div class="box__count count">
+                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3333 9.33335C15.5178 9.33468 15.6935 9.41183 15.8193 9.54668C15.9455 9.67886 16.011 9.85761 16 10.04C15.7997 13.3874 13.0267 15.9997 9.67333 16H6.32666C2.97324 15.9997 0.200326 13.3874 -4.91715e-06 10.04C-0.00878807 9.85806 0.0560946 9.68023 0.179995 9.54668C0.304916 9.41018 0.481628 9.33272 0.666662 9.33335H3.07866C3.22565 9.33473 3.3562 9.23967 3.4 9.09935C3.5741 8.54572 4.08631 8.1683 4.66666 8.16601H8.00333C8.58368 8.1683 9.09589 8.54572 9.26999 9.09935C9.31343 9.23849 9.44223 9.33327 9.588 9.33335H13.166C13.3501 9.33335 13.4993 9.18411 13.4993 9.00001V2.00001C13.5001 1.73655 13.3456 1.49736 13.1051 1.38968C12.8647 1.282 12.5834 1.32602 12.3873 1.50201L12.114 1.77535C12.0251 1.86493 11.9943 1.99706 12.0347 2.11668C12.2671 2.80327 12.0907 3.56229 11.5793 4.07601L11.446 4.21268C11.1857 4.47294 10.7637 4.47294 10.5033 4.21268L8.74 2.44868C8.47974 2.18835 8.47974 1.76635 8.74 1.50601L8.87666 1.36935C9.39648 0.872756 10.147 0.701707 10.8307 0.924014C10.9494 0.96174 11.0792 0.930112 11.1673 0.842014L11.476 0.533348C12.0593 -0.00563735 12.9062 -0.148438 13.634 0.169491C14.3617 0.487419 14.8324 1.20583 14.8333 2.00001V9.00001C14.8333 9.18411 14.9826 9.33335 15.1667 9.33335H15.3333ZM7.66666 13.5C7.85076 13.5 8 13.3508 8 13.1667V9.83335C8 9.64925 7.85076 9.50001 7.66666 9.50001H5C4.8159 9.50001 4.66666 9.64925 4.66666 9.83335V13.1667C4.66666 13.3508 4.8159 13.5 5 13.5H7.66666Z" fill="black"/>
+                                    <path d="M6 4.05856C6.09626 4.0594 6.19155 4.03939 6.27934 3.99989L7.49 3.44123C7.70663 3.34179 7.85374 3.13434 7.87594 2.89702C7.89813 2.6597 7.79203 2.42856 7.5976 2.29068C7.40318 2.1528 7.14996 2.12912 6.93334 2.22856L5.72067 2.78656C5.43638 2.91774 5.28168 3.22908 5.34883 3.53489C5.41599 3.8407 5.68691 4.05857 6 4.05856Z" fill="black"/>
+                                    <path d="M9.41467 7.67273C9.75322 7.81715 10.1448 7.65988 10.2893 7.3214L10.8133 6.09473C10.9485 5.75826 10.7899 5.37548 10.4564 5.23312C10.1229 5.09077 9.73684 5.24106 9.58734 5.5714L9.06667 6.80007C8.92318 7.13716 9.07859 7.52688 9.41467 7.67273Z" fill="black"/>
+                                    <path d="M6.99064 6.05074C7.24968 6.31229 7.67168 6.31438 7.9333 6.05541L8.8813 5.11807C9.13584 4.85799 9.13478 4.44183 8.87891 4.18304C8.62304 3.92426 8.20692 3.91849 7.94397 4.17007L6.99597 5.10807C6.73424 5.36693 6.73185 5.78894 6.99064 6.05074Z" fill="black"/>
+                                </svg>
+                                <span class="desc__span">2</span>
+                            </div>
+                            <div class="box__count">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.66667 3C5.03486 3 5.33333 2.70152 5.33333 2.33333V0.666667C5.33333 0.298477 5.03486 0 4.66667 0C4.29848 0 4 0.298477 4 0.666667V2.33333C4 2.70152 4.29848 3 4.66667 3Z" fill="black"/>
+                                    <path d="M3 4.66667C3 4.29848 2.70152 4 2.33333 4H0.666667C0.298477 4 0 4.29848 0 4.66667C0 5.03486 0.298477 5.33333 0.666667 5.33333H2.33333C2.70152 5.33333 3 5.03486 3 4.66667Z" fill="black"/>
+                                    <path d="M2.33333 10.6667H0.666667C0.298477 10.6667 0 10.9652 0 11.3334C0 11.7016 0.298477 12.0001 0.666667 12.0001H2.33333C2.70152 12.0001 3 11.7016 3 11.3334C3 10.9652 2.70152 10.6667 2.33333 10.6667Z" fill="black"/>
+                                    <path d="M11.3334 0C10.9652 0 10.6667 0.298477 10.6667 0.666667V2.33333C10.6667 2.70152 10.9652 3 11.3334 3C11.7015 3 12 2.70152 12 2.33333V0.666667C12 0.298477 11.7015 0 11.3334 0Z" fill="black"/>
+                                    <path d="M4.66667 13C4.29848 13 4 13.2985 4 13.6667V15.3333C4 15.7015 4.29848 16 4.66667 16C5.03486 16 5.33333 15.7015 5.33333 15.3333V13.6667C5.33333 13.2985 5.03486 13 4.66667 13Z" fill="black"/>
+                                    <path d="M11.3334 13C10.9652 13 10.6667 13.2985 10.6667 13.6667V15.3333C10.6667 15.7015 10.9652 16 11.3334 16C11.7015 16 12 15.7015 12 15.3333V13.6667C12 13.2985 11.7015 13 11.3334 13Z" fill="black"/>
+                                    <path d="M13.6667 5.33333H15.3333C15.7015 5.33333 16 5.03486 16 4.66667C16 4.29848 15.7015 4 15.3333 4H13.6667C13.2985 4 13 4.29848 13 4.66667C13 5.03486 13.2985 5.33333 13.6667 5.33333Z" fill="black"/>
+                                    <path d="M15.3333 10.6667H13.6667C13.2985 10.6667 13 10.9652 13 11.3334C13 11.7016 13.2985 12.0001 13.6667 12.0001H15.3333C15.7015 12.0001 16 11.7016 16 11.3334C16 10.9652 15.7015 10.6667 15.3333 10.6667Z" fill="black"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3333 4C11.7015 4 12 4.29848 12 4.66667V11.3333C12 11.7015 11.7015 12 11.3333 12H4.66667C4.29848 12 4 11.7015 4 11.3333V4.66667C4 4.29848 4.29848 4 4.66667 4H11.3333ZM10.3333 10.6667C10.5174 10.6667 10.6667 10.5174 10.6667 10.3333V5.66667C10.6667 5.48257 10.5174 5.33333 10.3333 5.33333H5.66667C5.48257 5.33333 5.33333 5.48257 5.33333 5.66667V10.3333C5.33333 10.5174 5.48257 10.6667 5.66667 10.6667H10.3333Z" fill="black"/>
+                                </svg>
+                                <span class="desc__span">2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <a href="#" class="card__img-link">
+                        <div class="card__img">
+                            <img src="../img/card5.png" alt="card1">
+                        </div>
+                    </a>
+                    <div class="card__desc">
+                        <a href="property.html" class="desc__link">
+                            <h4 class="desc__title">Malto House</h4>
+                        </a>
+                        <div class="desc__box">
+                            <div class="box__count">
+                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.04568 1.93541H7.95435C8.83758 1.93621 9.60446 2.54396 9.80701 3.40366C9.82401 3.47533 9.88794 3.52599 9.9616 3.52616H12.8864C12.9286 3.52631 12.9691 3.50966 12.999 3.47989C13.0289 3.45012 13.0457 3.40967 13.0457 3.36749V1.77616C13.0457 1.43863 12.9116 1.11494 12.6728 0.876333C12.4341 0.637724 12.1104 0.503752 11.7728 0.503906H2.22718C1.88966 0.503752 1.5659 0.637724 1.32719 0.876333C1.08847 1.11494 0.954346 1.43863 0.954346 1.77616V3.36749C0.954345 3.40967 0.971142 3.45012 1.00102 3.47989C1.03091 3.50966 1.07141 3.52631 1.1136 3.52616H4.03843C4.11224 3.52642 4.1764 3.47557 4.19301 3.40366C4.39557 2.54396 5.16244 1.93621 6.04568 1.93541Z" fill="black"/>
+                                    <path d="M0.636417 4.48096C0.467581 4.4808 0.305616 4.5478 0.186231 4.66719C0.0668464 4.78657 -0.000154698 4.94854 2.68218e-07 5.11737V8.45812C-2.50467e-07 8.76059 0.212885 9.02127 0.50925 9.08171C0.583199 9.09692 0.636306 9.16196 0.636417 9.23746V10.526C0.636417 10.8775 0.92135 11.1625 1.27283 11.1625C1.62432 11.1625 1.90925 10.8775 1.90925 10.526V9.25379C1.9091 9.21161 1.92574 9.1711 1.95552 9.14122C1.98529 9.11134 2.02573 9.09454 2.06792 9.09454H11.9321C11.9743 9.09454 12.0147 9.11134 12.0445 9.14122C12.0743 9.1711 12.0909 9.21161 12.0908 9.25379V10.526C12.0908 10.8775 12.3757 11.1625 12.7272 11.1625C13.0787 11.1625 13.3636 10.8775 13.3636 10.526V9.23746C13.3637 9.16196 13.4168 9.09692 13.4908 9.08171C13.7871 9.02127 14 8.76059 14 8.45812V5.11737C14.0002 4.94854 13.9332 4.78657 13.8138 4.66719C13.6944 4.5478 13.5324 4.4808 13.3636 4.48096H0.636417Z" fill="black"/>
+                                </svg>
+                                <span class="desc__span">4</span>
+                            </div>
+                            <div class="box__count count">
+                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3333 9.33335C15.5178 9.33468 15.6935 9.41183 15.8193 9.54668C15.9455 9.67886 16.011 9.85761 16 10.04C15.7997 13.3874 13.0267 15.9997 9.67333 16H6.32666C2.97324 15.9997 0.200326 13.3874 -4.91715e-06 10.04C-0.00878807 9.85806 0.0560946 9.68023 0.179995 9.54668C0.304916 9.41018 0.481628 9.33272 0.666662 9.33335H3.07866C3.22565 9.33473 3.3562 9.23967 3.4 9.09935C3.5741 8.54572 4.08631 8.1683 4.66666 8.16601H8.00333C8.58368 8.1683 9.09589 8.54572 9.26999 9.09935C9.31343 9.23849 9.44223 9.33327 9.588 9.33335H13.166C13.3501 9.33335 13.4993 9.18411 13.4993 9.00001V2.00001C13.5001 1.73655 13.3456 1.49736 13.1051 1.38968C12.8647 1.282 12.5834 1.32602 12.3873 1.50201L12.114 1.77535C12.0251 1.86493 11.9943 1.99706 12.0347 2.11668C12.2671 2.80327 12.0907 3.56229 11.5793 4.07601L11.446 4.21268C11.1857 4.47294 10.7637 4.47294 10.5033 4.21268L8.74 2.44868C8.47974 2.18835 8.47974 1.76635 8.74 1.50601L8.87666 1.36935C9.39648 0.872756 10.147 0.701707 10.8307 0.924014C10.9494 0.96174 11.0792 0.930112 11.1673 0.842014L11.476 0.533348C12.0593 -0.00563735 12.9062 -0.148438 13.634 0.169491C14.3617 0.487419 14.8324 1.20583 14.8333 2.00001V9.00001C14.8333 9.18411 14.9826 9.33335 15.1667 9.33335H15.3333ZM7.66666 13.5C7.85076 13.5 8 13.3508 8 13.1667V9.83335C8 9.64925 7.85076 9.50001 7.66666 9.50001H5C4.8159 9.50001 4.66666 9.64925 4.66666 9.83335V13.1667C4.66666 13.3508 4.8159 13.5 5 13.5H7.66666Z" fill="black"/>
+                                    <path d="M6 4.05856C6.09626 4.0594 6.19155 4.03939 6.27934 3.99989L7.49 3.44123C7.70663 3.34179 7.85374 3.13434 7.87594 2.89702C7.89813 2.6597 7.79203 2.42856 7.5976 2.29068C7.40318 2.1528 7.14996 2.12912 6.93334 2.22856L5.72067 2.78656C5.43638 2.91774 5.28168 3.22908 5.34883 3.53489C5.41599 3.8407 5.68691 4.05857 6 4.05856Z" fill="black"/>
+                                    <path d="M9.41467 7.67273C9.75322 7.81715 10.1448 7.65988 10.2893 7.3214L10.8133 6.09473C10.9485 5.75826 10.7899 5.37548 10.4564 5.23312C10.1229 5.09077 9.73684 5.24106 9.58734 5.5714L9.06667 6.80007C8.92318 7.13716 9.07859 7.52688 9.41467 7.67273Z" fill="black"/>
+                                    <path d="M6.99064 6.05074C7.24968 6.31229 7.67168 6.31438 7.9333 6.05541L8.8813 5.11807C9.13584 4.85799 9.13478 4.44183 8.87891 4.18304C8.62304 3.92426 8.20692 3.91849 7.94397 4.17007L6.99597 5.10807C6.73424 5.36693 6.73185 5.78894 6.99064 6.05074Z" fill="black"/>
+                                </svg>
+                                <span class="desc__span">2</span>
+                            </div>
+                            <div class="box__count">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.66667 3C5.03486 3 5.33333 2.70152 5.33333 2.33333V0.666667C5.33333 0.298477 5.03486 0 4.66667 0C4.29848 0 4 0.298477 4 0.666667V2.33333C4 2.70152 4.29848 3 4.66667 3Z" fill="black"/>
+                                    <path d="M3 4.66667C3 4.29848 2.70152 4 2.33333 4H0.666667C0.298477 4 0 4.29848 0 4.66667C0 5.03486 0.298477 5.33333 0.666667 5.33333H2.33333C2.70152 5.33333 3 5.03486 3 4.66667Z" fill="black"/>
+                                    <path d="M2.33333 10.6667H0.666667C0.298477 10.6667 0 10.9652 0 11.3334C0 11.7016 0.298477 12.0001 0.666667 12.0001H2.33333C2.70152 12.0001 3 11.7016 3 11.3334C3 10.9652 2.70152 10.6667 2.33333 10.6667Z" fill="black"/>
+                                    <path d="M11.3334 0C10.9652 0 10.6667 0.298477 10.6667 0.666667V2.33333C10.6667 2.70152 10.9652 3 11.3334 3C11.7015 3 12 2.70152 12 2.33333V0.666667C12 0.298477 11.7015 0 11.3334 0Z" fill="black"/>
+                                    <path d="M4.66667 13C4.29848 13 4 13.2985 4 13.6667V15.3333C4 15.7015 4.29848 16 4.66667 16C5.03486 16 5.33333 15.7015 5.33333 15.3333V13.6667C5.33333 13.2985 5.03486 13 4.66667 13Z" fill="black"/>
+                                    <path d="M11.3334 13C10.9652 13 10.6667 13.2985 10.6667 13.6667V15.3333C10.6667 15.7015 10.9652 16 11.3334 16C11.7015 16 12 15.7015 12 15.3333V13.6667C12 13.2985 11.7015 13 11.3334 13Z" fill="black"/>
+                                    <path d="M13.6667 5.33333H15.3333C15.7015 5.33333 16 5.03486 16 4.66667C16 4.29848 15.7015 4 15.3333 4H13.6667C13.2985 4 13 4.29848 13 4.66667C13 5.03486 13.2985 5.33333 13.6667 5.33333Z" fill="black"/>
+                                    <path d="M15.3333 10.6667H13.6667C13.2985 10.6667 13 10.9652 13 11.3334C13 11.7016 13.2985 12.0001 13.6667 12.0001H15.3333C15.7015 12.0001 16 11.7016 16 11.3334C16 10.9652 15.7015 10.6667 15.3333 10.6667Z" fill="black"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3333 4C11.7015 4 12 4.29848 12 4.66667V11.3333C12 11.7015 11.7015 12 11.3333 12H4.66667C4.29848 12 4 11.7015 4 11.3333V4.66667C4 4.29848 4.29848 4 4.66667 4H11.3333ZM10.3333 10.6667C10.5174 10.6667 10.6667 10.5174 10.6667 10.3333V5.66667C10.6667 5.48257 10.5174 5.33333 10.3333 5.33333H5.66667C5.48257 5.33333 5.33333 5.48257 5.33333 5.66667V10.3333C5.33333 10.5174 5.48257 10.6667 5.66667 10.6667H10.3333Z" fill="black"/>
+                                </svg>
+                                <span class="desc__span">2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <a href="#" class="card__img-link">
+                        <div class="card__img">
+                            <img src="../img/card6.png" alt="card1">
+                        </div>
+                    </a>
+                    <div class="card__desc">
+                        <a href="property.html" class="desc__link">
+                            <h4 class="desc__title">Malto House</h4>
+                        </a>
+                        <div class="desc__box">
+                            <div class="box__count">
+                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.04568 1.93541H7.95435C8.83758 1.93621 9.60446 2.54396 9.80701 3.40366C9.82401 3.47533 9.88794 3.52599 9.9616 3.52616H12.8864C12.9286 3.52631 12.9691 3.50966 12.999 3.47989C13.0289 3.45012 13.0457 3.40967 13.0457 3.36749V1.77616C13.0457 1.43863 12.9116 1.11494 12.6728 0.876333C12.4341 0.637724 12.1104 0.503752 11.7728 0.503906H2.22718C1.88966 0.503752 1.5659 0.637724 1.32719 0.876333C1.08847 1.11494 0.954346 1.43863 0.954346 1.77616V3.36749C0.954345 3.40967 0.971142 3.45012 1.00102 3.47989C1.03091 3.50966 1.07141 3.52631 1.1136 3.52616H4.03843C4.11224 3.52642 4.1764 3.47557 4.19301 3.40366C4.39557 2.54396 5.16244 1.93621 6.04568 1.93541Z" fill="black"/>
+                                    <path d="M0.636417 4.48096C0.467581 4.4808 0.305616 4.5478 0.186231 4.66719C0.0668464 4.78657 -0.000154698 4.94854 2.68218e-07 5.11737V8.45812C-2.50467e-07 8.76059 0.212885 9.02127 0.50925 9.08171C0.583199 9.09692 0.636306 9.16196 0.636417 9.23746V10.526C0.636417 10.8775 0.92135 11.1625 1.27283 11.1625C1.62432 11.1625 1.90925 10.8775 1.90925 10.526V9.25379C1.9091 9.21161 1.92574 9.1711 1.95552 9.14122C1.98529 9.11134 2.02573 9.09454 2.06792 9.09454H11.9321C11.9743 9.09454 12.0147 9.11134 12.0445 9.14122C12.0743 9.1711 12.0909 9.21161 12.0908 9.25379V10.526C12.0908 10.8775 12.3757 11.1625 12.7272 11.1625C13.0787 11.1625 13.3636 10.8775 13.3636 10.526V9.23746C13.3637 9.16196 13.4168 9.09692 13.4908 9.08171C13.7871 9.02127 14 8.76059 14 8.45812V5.11737C14.0002 4.94854 13.9332 4.78657 13.8138 4.66719C13.6944 4.5478 13.5324 4.4808 13.3636 4.48096H0.636417Z" fill="black"/>
+                                </svg>
+                                <span class="desc__span">4</span>
+                            </div>
+                            <div class="box__count count">
+                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3333 9.33335C15.5178 9.33468 15.6935 9.41183 15.8193 9.54668C15.9455 9.67886 16.011 9.85761 16 10.04C15.7997 13.3874 13.0267 15.9997 9.67333 16H6.32666C2.97324 15.9997 0.200326 13.3874 -4.91715e-06 10.04C-0.00878807 9.85806 0.0560946 9.68023 0.179995 9.54668C0.304916 9.41018 0.481628 9.33272 0.666662 9.33335H3.07866C3.22565 9.33473 3.3562 9.23967 3.4 9.09935C3.5741 8.54572 4.08631 8.1683 4.66666 8.16601H8.00333C8.58368 8.1683 9.09589 8.54572 9.26999 9.09935C9.31343 9.23849 9.44223 9.33327 9.588 9.33335H13.166C13.3501 9.33335 13.4993 9.18411 13.4993 9.00001V2.00001C13.5001 1.73655 13.3456 1.49736 13.1051 1.38968C12.8647 1.282 12.5834 1.32602 12.3873 1.50201L12.114 1.77535C12.0251 1.86493 11.9943 1.99706 12.0347 2.11668C12.2671 2.80327 12.0907 3.56229 11.5793 4.07601L11.446 4.21268C11.1857 4.47294 10.7637 4.47294 10.5033 4.21268L8.74 2.44868C8.47974 2.18835 8.47974 1.76635 8.74 1.50601L8.87666 1.36935C9.39648 0.872756 10.147 0.701707 10.8307 0.924014C10.9494 0.96174 11.0792 0.930112 11.1673 0.842014L11.476 0.533348C12.0593 -0.00563735 12.9062 -0.148438 13.634 0.169491C14.3617 0.487419 14.8324 1.20583 14.8333 2.00001V9.00001C14.8333 9.18411 14.9826 9.33335 15.1667 9.33335H15.3333ZM7.66666 13.5C7.85076 13.5 8 13.3508 8 13.1667V9.83335C8 9.64925 7.85076 9.50001 7.66666 9.50001H5C4.8159 9.50001 4.66666 9.64925 4.66666 9.83335V13.1667C4.66666 13.3508 4.8159 13.5 5 13.5H7.66666Z" fill="black"/>
+                                    <path d="M6 4.05856C6.09626 4.0594 6.19155 4.03939 6.27934 3.99989L7.49 3.44123C7.70663 3.34179 7.85374 3.13434 7.87594 2.89702C7.89813 2.6597 7.79203 2.42856 7.5976 2.29068C7.40318 2.1528 7.14996 2.12912 6.93334 2.22856L5.72067 2.78656C5.43638 2.91774 5.28168 3.22908 5.34883 3.53489C5.41599 3.8407 5.68691 4.05857 6 4.05856Z" fill="black"/>
+                                    <path d="M9.41467 7.67273C9.75322 7.81715 10.1448 7.65988 10.2893 7.3214L10.8133 6.09473C10.9485 5.75826 10.7899 5.37548 10.4564 5.23312C10.1229 5.09077 9.73684 5.24106 9.58734 5.5714L9.06667 6.80007C8.92318 7.13716 9.07859 7.52688 9.41467 7.67273Z" fill="black"/>
+                                    <path d="M6.99064 6.05074C7.24968 6.31229 7.67168 6.31438 7.9333 6.05541L8.8813 5.11807C9.13584 4.85799 9.13478 4.44183 8.87891 4.18304C8.62304 3.92426 8.20692 3.91849 7.94397 4.17007L6.99597 5.10807C6.73424 5.36693 6.73185 5.78894 6.99064 6.05074Z" fill="black"/>
+                                </svg>
+                                <span class="desc__span">2</span>
+                            </div>
+                            <div class="box__count">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.66667 3C5.03486 3 5.33333 2.70152 5.33333 2.33333V0.666667C5.33333 0.298477 5.03486 0 4.66667 0C4.29848 0 4 0.298477 4 0.666667V2.33333C4 2.70152 4.29848 3 4.66667 3Z" fill="black"/>
+                                    <path d="M3 4.66667C3 4.29848 2.70152 4 2.33333 4H0.666667C0.298477 4 0 4.29848 0 4.66667C0 5.03486 0.298477 5.33333 0.666667 5.33333H2.33333C2.70152 5.33333 3 5.03486 3 4.66667Z" fill="black"/>
+                                    <path d="M2.33333 10.6667H0.666667C0.298477 10.6667 0 10.9652 0 11.3334C0 11.7016 0.298477 12.0001 0.666667 12.0001H2.33333C2.70152 12.0001 3 11.7016 3 11.3334C3 10.9652 2.70152 10.6667 2.33333 10.6667Z" fill="black"/>
+                                    <path d="M11.3334 0C10.9652 0 10.6667 0.298477 10.6667 0.666667V2.33333C10.6667 2.70152 10.9652 3 11.3334 3C11.7015 3 12 2.70152 12 2.33333V0.666667C12 0.298477 11.7015 0 11.3334 0Z" fill="black"/>
+                                    <path d="M4.66667 13C4.29848 13 4 13.2985 4 13.6667V15.3333C4 15.7015 4.29848 16 4.66667 16C5.03486 16 5.33333 15.7015 5.33333 15.3333V13.6667C5.33333 13.2985 5.03486 13 4.66667 13Z" fill="black"/>
+                                    <path d="M11.3334 13C10.9652 13 10.6667 13.2985 10.6667 13.6667V15.3333C10.6667 15.7015 10.9652 16 11.3334 16C11.7015 16 12 15.7015 12 15.3333V13.6667C12 13.2985 11.7015 13 11.3334 13Z" fill="black"/>
+                                    <path d="M13.6667 5.33333H15.3333C15.7015 5.33333 16 5.03486 16 4.66667C16 4.29848 15.7015 4 15.3333 4H13.6667C13.2985 4 13 4.29848 13 4.66667C13 5.03486 13.2985 5.33333 13.6667 5.33333Z" fill="black"/>
+                                    <path d="M15.3333 10.6667H13.6667C13.2985 10.6667 13 10.9652 13 11.3334C13 11.7016 13.2985 12.0001 13.6667 12.0001H15.3333C15.7015 12.0001 16 11.7016 16 11.3334C16 10.9652 15.7015 10.6667 15.3333 10.6667Z" fill="black"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3333 4C11.7015 4 12 4.29848 12 4.66667V11.3333C12 11.7015 11.7015 12 11.3333 12H4.66667C4.29848 12 4 11.7015 4 11.3333V4.66667C4 4.29848 4.29848 4 4.66667 4H11.3333ZM10.3333 10.6667C10.5174 10.6667 10.6667 10.5174 10.6667 10.3333V5.66667C10.6667 5.48257 10.5174 5.33333 10.3333 5.33333H5.66667C5.48257 5.33333 5.33333 5.48257 5.33333 5.66667V10.3333C5.33333 10.5174 5.48257 10.6667 5.66667 10.6667H10.3333Z" fill="black"/>
+                                </svg>
+                                <span class="desc__span">2</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

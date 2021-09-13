@@ -10,6 +10,7 @@ $bgcCards: #F5F5F5
     margin: 0
     padding: 0
     box-sizing: border-box
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0)
 
 html
     scroll-behavior: smooth
@@ -40,8 +41,14 @@ textarea
     resize: none
     outline: none
 
-button
+button, label
     cursor: pointer
+
+::-webkit-scrollbar
+    width: 0
+    /* Remove scrollbar space */
+    background: transparent
+    /* Optional: just make scrollbar invisible */
 
 .menu__link, .nav__link, i, .up__link, .card, .nav__box-link
     transition: all .2s ease
@@ -284,46 +291,47 @@ button
                 &[open]
                     .filter__summary-arrow
                         transform: rotate(-180deg)
-    .content__cards
-        display: flex
-        justify-content: space-between
-        flex-wrap: wrap
-        .card
-            width: 336px
-            height: 418px
-            margin-bottom: 30px
-            border-radius: 25px 25px 0 0
-            background-color: #E4E4E4
-            .card__img-link
-                display: block
-            .desc__title
-                font-weight: 700
-                font-size: 24px
-                line-height: 31px
-                letter-spacing: -0.603077px
-                padding: 30px
-                border-bottom: 1px solid #E4E4E4
-            .card__desc
-                background-color: $white
-                border-radius: 0 0 25px 25px
-                .desc__box
+
+.content__cards
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    .card
+        width: 336px
+        height: 418px
+        margin-bottom: 30px
+        border-radius: 25px 25px 0 0
+        background-color: #E4E4E4
+        .card__img-link
+            display: block
+        .desc__title
+            font-weight: 700
+            font-size: 24px
+            line-height: 31px
+            letter-spacing: -0.603077px
+            padding: 30px
+            border-bottom: 1px solid #E4E4E4
+        .card__desc
+            background-color: $white
+            border-radius: 0 0 25px 25px
+            .desc__box
+                display: flex
+                .box__count
+                    width: 33%
+                    height: 60px
                     display: flex
-                    .box__count
-                        width: 33%
-                        height: 60px
-                        display: flex
-                        align-items: center
-                        justify-content: center
-                        gap: 10px
-                        border-right: 1px solid #E4E4E4
-                        &:first-of-type
-                        &:last-of-type
-                            border: none
-                    .count
-                        width: 34%
-            &:hover
-                transform: scale(1.06)
-                box-shadow: 0px 32px 34px rgba(0, 0, 0, 0.133714)
+                    align-items: center
+                    justify-content: center
+                    gap: 10px
+                    border-right: 1px solid #E4E4E4
+                    &:first-of-type
+                    &:last-of-type
+                        border: none
+                .count
+                    width: 34%
+        &:hover
+            transform: scale(1.06)
+            box-shadow: 0px 32px 34px rgba(0, 0, 0, 0.133714)
 
 .section__bottom
     height: 636px
@@ -342,6 +350,10 @@ button
             margin-right: 77px
 
 .main
+    position: relative
+    z-index: 0
+    padding-bottom: 150px
+    overflow: hidden
     background-color: #F5F5F5
     .section__product
         padding-top: 60px
@@ -351,6 +363,8 @@ button
         &-left
             display: flex
             flex-direction: column
+            .product__up
+                margin-bottom: 40px
             .product__img
                 margin-bottom: 20px
             form
@@ -362,6 +376,85 @@ button
                     display: none
                 .product__input:checked + .img__radio
                     opacity: .5
+            .product__details
+                width: 100%
+                height: 147px
+                display: flex
+                flex-direction: column
+                position: relative
+                margin-bottom: 40px
+                background: #FFFFFF
+                border-radius: 25px
+                &::after
+                    content: ''
+                    display: block
+                    height: 60px
+                    position: absolute
+                    left: 0
+                    bottom: 0
+                    right: 0
+                    z-index: -1
+                    background: #E4E4E4
+                &-title
+                    padding-top: 30px
+                    padding-left: 30px
+                    font-weight: bold
+                    font-size: 20px
+                    line-height: 26px
+                    letter-spacing: -0.502564px
+                &-box
+                    display: flex
+                    height: 60px
+                    margin-top: auto
+                &-item
+                    width: 25%
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    gap: 10px
+                    border-top: 1px solid #E4E4E4
+                    span
+                        font-weight: bold
+                        font-size: 17px
+                        line-height: 22px
+                        letter-spacing: -0.427179px
+                        color: #000000
+                    &:not(:last-of-type)
+                        border-right: 1px solid #E4E4E4
+            .elements
+                height: auto
+                &:last-of-type
+                    margin-bottom: 0
+                .product__details-title
+                    margin: 0
+                    padding-bottom: 30px
+                    border-bottom: 1px solid #E4E4E4
+                &__content
+                    width: 100%
+                    padding: 35px 30px
+                .elements__content-flex
+                    display: flex
+                    justify-content: space-between
+                &__text
+                    font-size: 15px
+                    line-height: 22px
+                    letter-spacing: -0.376923px
+                    color: #000000
+                    mix-blend-mode: normal
+                    opacity: 0.6
+                .column-item
+                    display: flex
+                    gap: 10px
+                    align-items: center
+                    &-text
+                        font-size: 15px
+                        line-height: 22px
+                        letter-spacing: -0.376923px
+                        color: #000000
+                        mix-blend-mode: normal
+                        opacity: 0.6
+                    &:not(:last-of-type)
+                        margin-bottom: 20px
         &-right
             .product__form
                 width: 336px
@@ -426,6 +519,47 @@ button
                         background-color: $yellow
                         .nav__link-arrow
                             color: $white
+
+.listing
+    max-width: 1070px
+    margin: 0 auto
+    height: 564px
+    position: relative
+    &__title
+        font-weight: bold
+        font-size: 50px
+        line-height: 65px
+        letter-spacing: -1.25641px
+        color: #000000
+    &__box
+        display: flex
+        justify-content: space-between
+        margin-top: 17px
+    &__btn-box
+        display: flex
+        align-items: center
+        gap: 30px
+        label
+            transition: all .2s ease
+        #slider1, #slider2
+            position: absolute
+            visibility: hidden
+            left: -9999999px
+            &:checked + label
+                opacity: .3
+    .content__cards
+        display: flex
+        justify-content: normal
+        flex-wrap: nowrap
+        gap: 31px
+        position: absolute
+        top: 146px
+        left: 0
+        transition: all .2s ease
+        img
+            max-width: none
+        .card
+            margin-bottom: 0
 
 .footer
     &__up

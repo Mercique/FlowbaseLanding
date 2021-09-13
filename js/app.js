@@ -37,3 +37,15 @@ function swapPicture(value) {
         picture.setAttribute('src', '../img/radio7-big.png')
     }
 }
+
+function slider(value) {
+    var a = document.getElementById('listing__cards')
+
+    if (value == '1') {
+        a.style.left = '0'
+        a.style.right = 'initial'
+    } else {
+        a.style.left = 'initial'
+        a.style.right = '0'
+    }
+}
