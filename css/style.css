@@ -874,18 +874,11 @@ button, label {
   gap: 30px;
 }
 
-.listing__btn-box label {
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
+.listing .btn-box {
+  cursor: pointer;
 }
 
-.listing__btn-box #slider1, .listing__btn-box #slider2 {
-  position: absolute;
-  visibility: hidden;
-  left: -9999999px;
-}
-
-.listing__btn-box #slider1:checked + label, .listing__btn-box #slider2:checked + label {
+.listing .btn-box-checked {
   opacity: .3;
 }
 
@@ -902,8 +895,8 @@ button, label {
   position: absolute;
   top: 146px;
   left: 0;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
+  -webkit-transition: left 1s ease;
+  transition: left 1s ease;
 }
 
 .listing .content__cards img {

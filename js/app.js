@@ -38,14 +38,16 @@ function swapPicture(value) {
     }
 }
 
-function slider(value) {
-    var a = document.getElementById('listing__cards')
+document.querySelectorAll('.btn-box')[0].onclick = function() {
+    document.querySelectorAll('.btn-box')[1].classList.remove('btn-box-checked');
+    this.classList.add('btn-box-checked');
 
-    if (value == '1') {
-        a.style.left = '0'
-        a.style.right = 'initial'
-    } else {
-        a.style.left = 'initial'
-        a.style.right = '0'
-    }
+    document.getElementById('listing__cards').style.left = '0';
+}
+
+document.querySelectorAll('.btn-box')[1].onclick = function() {
+    document.querySelectorAll('.btn-box')[0].classList.remove('btn-box-checked');
+    this.classList.add('btn-box-checked');
+
+    document.getElementById('listing__cards').style.left = '-1102px';
 }
